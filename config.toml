@@ -1,0 +1,32 @@
+baseURL = "https://brandonsstewart.com"
+languageCode = "en-us"
+title = "Brandons Blog"
+theme = "hugo-theme-codex"
+
+googleAnalytics = "UA-172938556-1"
+
+[params]
+  github = "https://github.com/boveus"
+  email = "mailto:brandon.s.stewart88@gmail.com"
+  linkedin = "https://www.linkedin.com/in/brandon-scott-stewart/"
+  iconTitles = ["GitHub", "Email", 'LinkedIn']
+
+[markup]
+  [markup.highlight]
+    codeFences = false
+
+  # Set to false to disallow raw HTML in markdown files
+  [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  title = "About"
+  url = "/"
+
+[[menu.main]]
+  identifier = "blog"
+  name = "blog"
+  title = "Blog"
+  url = "/blog"
