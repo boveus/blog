@@ -10,7 +10,7 @@ math: false
 toc: false
 ---
 
-In this post I will to walk through a few areas of the [Redmine)](https://github.com/redmine/redmine) application and analyze how the authors of this application protected it against command injection vulnerabilities.  I will also provide some general recommendations for how to safely call bash or other system calls in your own code.
+In this post I will to walk through a few areas of the [Redmine](https://github.com/redmine/redmine) application and analyze how the authors of this application protected it against command injection vulnerabilities.  I will also provide some general recommendations for how to safely call bash or other system calls in your own code.
 
 ## What is command injection?
 
