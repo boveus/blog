@@ -1,6 +1,6 @@
 baseURL = "https://brandonsstewart.com"
 languageCode = "en-us"
-title = "Brandons Blog"
+title = "Brandon's Blog"
 theme = "hugo-theme-codex"
 
 googleAnalytics = "UA-172938556-1"
