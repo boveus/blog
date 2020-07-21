@@ -4,7 +4,7 @@ date: 2020-07-20
 slug: "guide-to-burp-suite"
 description: "A guide to the Burp Suite - tips and tricks to get started with Burp and supplement it with scripts with an example using ysoserial"
 keywords: ['burp suite', 'security', 'ruby', 'ysoserial']
-draft: false
+draft: true
 tags: []
 math: false
 toc: false
