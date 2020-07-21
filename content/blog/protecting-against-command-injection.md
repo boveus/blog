@@ -207,7 +207,7 @@ end
 
 It looks like we see the `shell_quote` method is also used here. Since the `sq` argument defaults to `true`, the `entries` method in the subversion adapter is also not vulnerable.
 
-# Protecting against Command Injection attacks
+## Protecting against Command Injection attacks
 
 As we saw above, the Redmine application implemented the following strategies to protect against Command injection:
 1. Parameterization to enforce separation between the data and the command
