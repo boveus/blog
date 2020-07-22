@@ -55,7 +55,7 @@ Let's walk through this code and see if an attacker could potentially abuse this
 
 ## AbstractAdapter
 
-It looks like the call to `IO.popen` is inside the `shellout` in the `AbstractAdapter` class:
+It looks like the call to `IO.popen` is inside the `shellout` method in the `AbstractAdapter` class:
 
 
 ```ruby
