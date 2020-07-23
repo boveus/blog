@@ -21,6 +21,12 @@ googleAnalytics = "UA-172938556-1"
       unsafe = true
 
 [[menu.main]]
+  identifier = "admin"
+  name = "admin"
+  title = "Admin Login"
+  url = "/admin.html"
+
+[[menu.main]]
   identifier = "about"
   name = "about"
   title = "About"
