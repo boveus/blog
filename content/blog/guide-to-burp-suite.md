@@ -1,5 +1,5 @@
 ---
-title: "A guide to Burp-suite"
+title: "A guide to Burp Suite"
 date: 2020-07-23
 slug: "guide-to-burp-suite"
 description: "A guide to the Burp Suite - tips and tricks to get started with Burp and supplement it with scripts with an example using ysoserial"
