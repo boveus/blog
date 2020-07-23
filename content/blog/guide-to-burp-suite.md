@@ -4,7 +4,7 @@ date: 2020-07-20
 slug: "guide-to-burp-suite"
 description: "A guide to the Burp Suite - tips and tricks to get started with Burp and supplement it with scripts with an example using ysoserial"
 keywords: ['burp suite', 'security', 'ruby', 'ysoserial']
-draft: true
+draft: false
 tags: []
 math: false
 toc: false
@@ -20,25 +20,27 @@ Burp is commonly used by security researchers to perform manual and automated te
 
 ## Burp Proxy Basics
 
-Burp functions as a web proxy, meaning that it will intercept any web traffic from a particular port.  By default, it will use port `8080`.  Before starting Burp or getting it set up, you will want to set up a proxy server on your web browser of choice.
+Burp functions as a web proxy, meaning that it will intercept any web traffic that is sent through a particular port.  By default, it will use port `8080`.  Before starting Burp or getting it set up, you will want to set up a proxy server on your web browser of choice.
 
 I use a Firefox extension called [FoxyProxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) to manage my Burp proxy. You can also configure a web proxy manually through your browser settings.
 
 An alternative to this approach would be to have two browsers running, one that you use to generate web traffic to the application you are analyzing, and another to conduct research.
 
-There are more options than this such as [generating a certificate for Burp to use](https://portswigger.net/support/installing-burp-suites-ca-certificate-in-your-browser).  
+You can also [generating a certificate for Burp to use](https://portswigger.net/support/installing-burp-suites-ca-certificate-in-your-browser) if you want to test a website that is not local to your environment.  
 
 ## Capturing Traffic
 
-When you first launch Burp and navigate to your target application, you will likely see something like this:
+When you first launch Burp and navigate to your target application, you will likely see something like this under the `navigation` tab:
 
 ![image](https://user-images.githubusercontent.com/20469703/87994313-9f167b80-caba-11ea-81cd-817021da5ab2.png)
 
-This is intercepting the traffic and allowing you to modify it and either forward it along or drop it. You also have the option of `sending` this request to other Burp tabs.
+This is intercepting the traffic and allowing you to modify it and either forward it along (send it) or drop it (don't send it). You also have the option of `sending` this request to other Burp tabs using the `Action` button.
 
-Typically, I will turn this feature off and use some of the other manual features such as the `HTTP history`, `Repeater`, or the `Target` tab to review server requests.
+Typically, I will turn this feature off and use some of the other manual features such as the `HTTP history`, `Repeater`, or the `Target` tab to review network requests.
 
 ## The Request and Response tabs
+
+The request and response tabs are present in most of the interfaces I will be covering.
 
 The request tab, as its name implies, provides information about the request that was made to the server through the Burp Proxy.  
 
@@ -49,11 +51,10 @@ And the `headers` view shows the headers from the request:
 The response tab will show what the server responded with:
 ![image](https://user-images.githubusercontent.com/20469703/87997479-2f58be80-cac3-11ea-9abe-76f0e92829d8.png)
 
-These tabs are present in most of the future interfaces we will be covering.
 
 ## The Target Tab
 
-The Target tab presents a hierarchical view of the site with the various pages available on the target application.  In this example, I am using a simple Rails API that has a `/library/books/<id>` RESTful API endpoint:
+Heading back to to the main navigation, you will see the `Target` tab.  The Target tab presents a hierarchical view of the site with the various pages available on the target application.  In this example, I am using a simple Rails API that has a `/library/books/<id>` RESTful API endpoint:
 
 ![image](https://user-images.githubusercontent.com/20469703/87994885-0ed93600-cabc-11ea-9f43-4aee9173b9a9.png)
 
@@ -71,7 +72,7 @@ This is an example of why this tab is useful - it can allow you see if a particu
 
 ## The Repeater Tab
 
-The Repeater tab is useful when you have discovered some sort of odd behavior in a target and want to do a series of targeted requests.  
+The Repeater tab is useful when you have discovered odd behavior in a target application and want to do a series of requests with slightly different content.  
 
 ![image](https://user-images.githubusercontent.com/20469703/87995581-e5210e80-cabd-11ea-9834-60d91235daa9.png)
 
@@ -79,17 +80,19 @@ You can modify any aspect of the HTTP request, including the header, HTTP action
 
 ![image](https://user-images.githubusercontent.com/20469703/87995969-ee5eab00-cabe-11ea-9951-ae604b55c0f9.png)
 
-In this example, I have intentionally created a vulnerable application.  As you can see, sending `Logger` instead of an ID results in some unexpected behavior.  The repeater tab is a bit easier than manually making browser requests.  It also does not appear in the Burp proxy history, so it can cut down on some of the noise when trying a bunch of different requests.
+In this example, I have intentionally created a vulnerable application.  As you can see, sending `Logger` instead of an ID results in some unexpected behavior.  
+
+The repeater tab is a bit easier than manually making browser requests.  It also does not appear in the Burp proxy history, so it can cut down on some of the noise when trying a bunch of different requests.
 
 ## The Intruder Tab
 
-The intruder tab is used to send a large number of requests to a particular endpoint.  This can be a list that you type out manually, or a `.txt` file that you've created specifically for that purpose.  I tend to only use the `sniper` option since I have only ever needed to send numerous requests to a single position.
+The intruder tab is used to send a large number of requests to a particular endpoint.  This can be a list that you type out manually or a `.txt` file that you've created specifically for that purpose.  I tend to only use the `sniper` option since I usually only test a single variant at a time.
 
 To send a particular request to Intruder, you can use the following menu option from the proxy tab:
 
 ![image](https://user-images.githubusercontent.com/20469703/87996118-4b5a6100-cabf-11ea-8488-49789fcb3aca.png)
 
-Once there, you can define which parameter you want to send a pre-defined list to.  In this example, I am setting the `id` parameter of the URL as my payload marker:
+Once there, you can define which part of the request you'd like to make dynamic.  In this example, I am setting the `id` parameter of the URL as my payload marker:
 
 ![image](https://user-images.githubusercontent.com/20469703/87996232-865c9480-cabf-11ea-9c50-791cfea6fb09.png)
 
@@ -106,6 +109,8 @@ You can click the `Start Attack` button to run the attack. Once you run the atta
 
 In this example, any strings that are Rails objects that I pass in as arguments result in error code `500`, but other inputs tend to results in `200`, or `304`. This would further confirm some of the behavior I noticed when using the `Repeater` functionality earlier.
 
+The intruder tab can be useful if you encounter an area of a web application that seems to respond differently to different types of input.  This can be useful for narrowing down what kind of potential vulnerability or unexpected behavior the server might be producing.
+
 ## Using scripts with Burp
 
 One of the most powerful uses for Burp is using it alongside a scripting language of some kind.  Because Burp is a proxy, you can proxy a script's request through Burp just like you can with a browser request.
@@ -121,11 +126,13 @@ response = conn.get
 print response
 ```
 
-This is a very simple example, but this code uses Ruby's Faraday gem to make a request through the Burp proxy.  This will allow requests generated from this script to to appear in the Burp proxy.  If I am writing a PoC script for example, this would allow me to observe the requests in Burp and compare them with requests that I have successfully made against the server.
+This is a very simple example, but this code uses Ruby's Faraday gem to make a request through the Burp proxy.  This will allow requests generated from this script to to appear in the Burp proxy.  If I am writing a proof of concept exploit script, for example, this would allow me to observe the requests in Burp and compare them with requests that I have successfully made against the server.
 
 ## Generating Intruder Payloads with ysoserial and Ruby
 
-Ysoserial is a powerful tool that is used to create gadget chains to exploit Deserialization vulnerabilities in Java.  Basically, this will create a string of some kind that contains malicious code that can result in `Remote Code Execution` on a Java application.  While attempting to exploit a vulnerability in a Java application, I wrote the following script to generate a text file of all of the potential ysoserial payloads encoded in base64.
+Ysoserial is a powerful tool that is used to create gadget chains to exploit Deserialization vulnerabilities in Java.  Basically, this will create a string of some kind that contains malicious code that can result in `Remote Code Execution` or other exploit conditions within a Java application.  
+
+While attempting to exploit a vulnerability in a Java application, I wrote the following script to generate a text file of ysoserial payloads encoded in base64.
 
 In addition to the ysoserial payload, this also uses 3 different payloads for each of the payloads.  It also encodes the payloads in base64, which is commonly used by Java applications to receive a base64 encoded object.
 

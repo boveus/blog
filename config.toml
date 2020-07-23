@@ -10,7 +10,7 @@ googleAnalytics = "UA-172938556-1"
   email = "mailto:brandon.s.stewart88@gmail.com"
   linkedin = "https://www.linkedin.com/in/brandon-scott-stewart/"
   iconTitles = ["GitHub", "Email", 'LinkedIn']
-  Description = "Brandon Stewart's personal blog site. Most of my posts involve Application Security and Software Development"
+  Description = "Brandon Stewarts personal blog site. Most of my posts involve Application Security and Software Development"
 
 [markup]
   [markup.highlight]
