@@ -10,7 +10,7 @@ math: false
 toc: false
 ---
 
-In this article I will discuss some of the features I most commonly use in the Burp Suite tool. I will also provide a sample of some of the Ruby scripts that I have written and used in conjunction with it.  
+In this article I will discuss some of the features I use in the Burp Suite tool. I will also provide a sample of some of the Ruby scripts that I have written and used in conjunction with it.  
 
 ## What is Burp suite?
 
