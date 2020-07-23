@@ -12,7 +12,7 @@ toc: false
 
 In this article I will discuss some of the features I use in the Burp Suite tool. I will also provide a sample of some of the Ruby scripts that I have written and used in conjunction with it.  
 
-## What is Burp suite?
+## What is Burp Suite?
 
 Portswigger, the creator of Burp Suite, describes the Community Edition of Burp Suite as a "feature-limited set of manual tools for exploring web security. Proxy your HTTPS traffic, edit and repeat requests, decode data, and more.".
 
