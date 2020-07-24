@@ -130,11 +130,13 @@ This is a very simple example, but this code uses Ruby's Faraday gem to make a r
 
 ## Generating Intruder Payloads with ysoserial and Ruby
 
-Ysoserial is a powerful tool that is used to create gadget chains to exploit Deserialization vulnerabilities in Java.  Basically, this will create a string of some kind that contains malicious code that can result in `Remote Code Execution` or other exploit conditions within a Java application.  
+Ysoserial is a powerful tool that is used to create gadget chains to exploit Deserialization vulnerabilities in Java.  Basically, this will create a string of some kind that contains malicious code that can result in arbitrary code execution within a Java application.  
 
-While attempting to exploit a vulnerability in a Java application, I wrote the following script to generate a text file of ysoserial payloads encoded in base64.
+While attempting to exploit a deserialization vulnerability in a Java application, I wrote the following script to generate a text file of ysoserial payloads encoded in base64.
 
-In addition to the ysoserial payload, this also uses 3 different payloads for each of the payloads.  It also encodes the payloads in base64, which is commonly used by Java applications to receive a base64 encoded object.
+In addition to the ysoserial payload, this also uses loops through 3 different commands to include in each of the payloads.  The three payloads tested 2 variations of a bash reverse shell that connects to a netcat listener, and one test for a command injection by seeing if I could create a file using the `touch` command.
+
+After generating the payload from ysoserial it encodes the output of the ysoserial command in base64, which is commonly used by Java web applications to receive a serialized object, and saves the resulting string to a new line of the text file.
 
 ```ruby
 require 'base64'
@@ -160,9 +162,7 @@ payloads = %w(BeanShell1 C3P0 Clojure CommonsBeanutils1 CommonsCollections1
 end
 ```
 
-The three payloads tested 2 variations of a bash reverse shell that connects to a netcat listener, and one test for a command injection by seeing if I could create a file using the `touch` command.  I was able to use this to determine if the application was vulnerable to one of the given gadget chain command combinations.
-
-In a similar way, intruder payloads can be generated using other tools to fuzz an application.  
+I was able to use this to determine if the application was vulnerable to one of the gadget chains within ysoserial. Once this text file was generated, I was able to use it as an intruder payload, effectively using Burp to fuzz the application in a targeted, and controlled way.
 
 ## Burp
 
