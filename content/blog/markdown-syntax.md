@@ -1,6 +1,5 @@
 ---
 title: "Markdown Syntax Guide"
-date: 2020-06-05
 slug: "markdown-syntax-guide"
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements"
 keywords: ["gohugo", "hugo", "go", "blog"]
