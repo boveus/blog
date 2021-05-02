@@ -1,6 +1,5 @@
 ---
 title: "Protecting Against Command Injection"
-date: 2020-07-19
 slug: "protecting-against-command-injection"
 description: "Protecting against Command Injection - a practical example of secure coding in Ruby on Rails from the Redmine project."
 keywords: ['command injection', 'security', 'secure coding', 'command injection protection']

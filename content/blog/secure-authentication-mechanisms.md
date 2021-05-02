@@ -1,6 +1,5 @@
 ---
 title: "Secure Authentication Mechanisms"
-date: 2020-08-09
 slug: "secure-authentication-mechanisms"
 description: "Protecting against Command Injection - a practical example of secure coding in Ruby on Rails from the Redmine project."
 keywords: ['authentication', 'security', 'secure coding', 'laravel', '2FA']
