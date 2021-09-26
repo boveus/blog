@@ -11,8 +11,13 @@ rm -rf public
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
+# so the submodule works
+git rm -rf --cached public
+
 # Go To Public folder
 cd public
+
+
 
 # Add changes to git.
 git add .
