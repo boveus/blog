@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Secure Authentication Mechanisms | Brandon&#39;s Blog</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="Protecting against Command Injection - a practical example of secure coding in Ruby on Rails from the Redmine project.">
+  <meta name="keywords" content="authentication , security , secure coding , laravel , 2FA">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.679ea46872c2b319c5ae942c601a7330924fd57451c89d621d6cb129c870c2a8.css" integrity="sha256-Z56kaHLCsxnFrpQsYBpzMJJP1XRRyJ1iHWyxKchwwqg="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.f515d27511835074e6164a4ad60fa9b60192faa3bfe718351449c9367f80bd24.css" integrity="sha256-9RXSdRGDUHTmFkpK1g&#43;ptgGS&#43;qO/5xg1FEnJNn&#43;AvSQ="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/brandonsstewart.com"
+      },
+      "articleSection" : "blog",
+      "name" : "Secure Authentication Mechanisms",
+      "headline" : "Secure Authentication Mechanisms",
+      "description" : "Protecting against Command Injection - a practical example of secure coding in Ruby on Rails from the Redmine project.",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "0001",
+      "datePublished": "0001-01-01 00:00:00 \x2b0000 UTC",
+      "dateModified" : "0001-01-01 00:00:00 \x2b0000 UTC",
+      "url" : "https:\/\/brandonsstewart.com\/blog\/secure-authentication-mechanisms\/",
+      "wordCount" : "1920",
+      "keywords" : ["authentication", "security", "secure coding", "laravel", "2FA", "Blog"]
+    }
+  
+  </script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-172938556-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" role="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  href="/admin.html">admin</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Secure Authentication Mechanisms</h1>
+            <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" class="post__date"
+            >Jan 1 0001</time>
+          </header>
+          <article class="post__content">
+              
+<p>In this post I will walk through a few areas of the <a href="https://cachethq.io/">Cachet</a> application and analyze how the authors handled various authentication mechanisms and stored sensitive data.  I will cover some of the best practices related to storing user passwords and other secure tokens as well as how the authors implemented two factor authentication.  I will go into detail about some of the vulnerabilities in 2FA and how to harden a 2FA implementation.  This post will touch on aspects of <code>Broken Authentication</code> and <code>Sensitive Data Exposure</code> #2 and #3 of the OWASP top 10 vulnerabilities respectively.</p>
+<h2 id="broken-authentication">Broken authentication<a class="anchor" href="#broken-authentication">#</a></h2>
+<p>OWASP describes broken authentication as the following:</p>
+<blockquote>
+<p>Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities temporarily or permanently.</p>
+</blockquote>
+<p>Below are some highlights from OWASP&rsquo;s <a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication">recommendations</a> to protect against Broken authentication:</p>
+<ul>
+<li>Where possible, implement multi-factor authentication to prevent automated, credential stuffing, brute force, and stolen credential re-use attacks.</li>
+<li>Ensure registration, credential recovery, and API pathways are hardened against account enumeration attacks by using the same messages for all outcomes.</li>
+<li>Limit or increasingly delay failed login attempts. Log all failures and alert administrators when credential stuffing, brute force, or other attacks are detected.</li>
+<li>Use a server-side, secure, built-in session manager that generates a new random session ID with high entropy after login. Session IDs should not be in the URL, be securely stored and invalidated after logout, idle, and absolute timeouts.</li>
+</ul>
+<h2 id="sensitive-data-exposure">Sensitive Data exposure<a class="anchor" href="#sensitive-data-exposure">#</a></h2>
+<p>OWASP says the following about Sensitive Data Exposure:</p>
+<blockquote>
+<p>Sensitive Data Exposure. Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.</p>
+</blockquote>
+<p>And to following <a href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure">recommendations</a> protect against Sensitive Data Exposure:</p>
+<ul>
+<li>Ensure up-to-date and strong standard algorithms, protocols, and keys are in place; use proper key management.</li>
+<li>Disable caching for response that contain sensitive data.</li>
+<li>Store passwords using strong adaptive and salted hashing functions with a work factor (delay factor), such as Argon2, scrypt, bcrypt or PBKDF2.</li>
+</ul>
+<h2 id="analysis-of-cachet">Analysis of Cachet<a class="anchor" href="#analysis-of-cachet">#</a></h2>
+<p>Cachet is a popular open-source status monitoring tool written in PHP using the Laravel framework.  It provides an organization with a simple interface to manage a status page, report incidents, and view metrics about outages and past incidents.</p>
+<p>One of the features that they <a href="https://cachethq.io/">advertise</a> is Two-factor authentication using the Google Authenticator app.</p>
+<h2 id="the-user-model-in-cachet">The User model in Cachet<a class="anchor" href="#the-user-model-in-cachet">#</a></h2>
+<p>Since I was focusing on authentication and sensitive information in this analysis, the first area of the code base that seemed interesting is the <code>user</code> model.  Looking at the migrations, the user model contains the following attributes:</p>
+<pre><code class="language-php">     $table-&gt;increments('id');
+     $table-&gt;string('username');
+     $table-&gt;string('password');
+     $table-&gt;rememberToken();
+     $table-&gt;string('email');
+     $table-&gt;string('api_key');
+     $table-&gt;boolean('active')-&gt;default(1);
+     $table-&gt;tinyInteger('level')-&gt;default(2);
+     $table-&gt;timestamps();
+
+     $table-&gt;index('remember_token');
+     $table-&gt;index('active');
+     $table-&gt;unique('username');
+     $table-&gt;unique('api_key');
+     $table-&gt;unique('email');
+     $table-&gt;string('google_2fa_secret')-&gt;nullable()-&gt;after('remember_token');
+</code></pre>
+<p>Some of the potentially sensitive information here seem to be the <code>password</code>, <code>api_key</code>, and <code>google_2fa_secret</code></p>
+<h3 id="the-password-field">The password field<a class="anchor" href="#the-password-field">#</a></h3>
+<p>When a user configures a password, the <code>User</code> object calls the following method:</p>
+<pre><code class="language-php"># User.php
+...
+public function setPasswordAttribute($password)
+{
+    $this-&gt;attributes['password'] = Hash::make($password);
+
+    return $this;
+}
+...
+</code></pre>
+<p>This uses the password hashing mechanism that is <a href="https://laravel.com/docs/7.x/hashing">built into Laravel</a> which uses the Bcrypt driver.  This appears to be a good choice as it will hash the password with a salt before persisting it to the database.  In general, it is a good choice to rely on widely used third party applications for hashing mechanisms.</p>
+<h2 id="the-api-key-field">The API key field<a class="anchor" href="#the-api-key-field">#</a></h2>
+<p>When a user creates an account or manually refreshes their API key through the admin interface, a new API key is generated for them using the following method:</p>
+<pre><code class="language-php"># User.php
+public static function generateApiKey()
+{
+    return Str::random(20);
+}
+</code></pre>
+<p>This method seems suspect.  In many programming languages, <code>random</code> methods and functions are not cryptographically secure.  According to the Laravel <a href="https://laravel.com/docs/7.x/helpers#method-str-random">documentation</a> this uses an implementation of the PHP <a href="https://www.php.net/manual/en/function.random-bytes.php">random_bytes</a> function.  The PHP docs provide the following description of the <code>random_bytes</code> function:</p>
+<pre><code class="language-text">random_bytes ( int $length ) : string
+
+Generates an arbitrary length string of cryptographic random bytes
+that are suitable for cryptographic use,
+such as when generating salts, keys or initialization vectors.
+
+The sources of randomness used for this function are as follows:
+
+   On Windows, » CryptGenRandom() will always be used. As of PHP 7.2.0,
+   the » CNG-API will always be used instead.
+   On Linux, the » getrandom(2) syscall will be used if available.
+   On other platforms, /dev/urandom will be used.
+   If none of the aforementioned sources are available,
+   then an Exception will be thrown.
+</code></pre>
+<p>It appears that the <code>Str::random</code> function is cryptographically secure.</p>
+<h3 id="insecure-randomness">Insecure Randomness<a class="anchor" href="#insecure-randomness">#</a></h3>
+<p>In the above example, the developers working on Cachet used a cryptographically secure random generation method.  A cryptographically secure random function&rsquo;s output needs to be either impossible or highly improbable to guess.  In other words, the values produced by a random function should not have a discernible pattern.  If a given pseudo-random output has a discernible pattern, then it is opens up an <a href="https://owasp.org/www-community/vulnerabilities/Insecure_Randomness">Insecure Randomness</a> vulnerability.</p>
+<p>An example of this type of vulnerability was discovered last month in <a href="https://portswigger.net/daily-swig/app-generator-tool-jhipster-kotlin-fixes-fundamental-cryptographic-bug">JHipster Kotlin</a>.</p>
+<p>When generating secure tokens it is essential that the token generation mechanism uses a cryptographically secure pseudo random generation mechanism.</p>
+<h2 id="google-2fa-secret">Google 2FA secret<a class="anchor" href="#google-2fa-secret">#</a></h2>
+<p>The Google 2FA secret it used through the Google Authenticator TOTP (Time-based One-time Password) application to handle 2 factor authentication within Cachet.</p>
+<p>The token is created in the <code>UserController</code> when a user enables 2FA in the admin dashboard:</p>
+<pre><code class="language-php">        // Let's enable/disable auth
+        if ($enable2FA &amp;&amp; !Auth::user()-&gt;hasTwoFactor) {
+            event(new UserEnabledTwoAuthEvent(Auth::user()));
+            $google2fa = new Google2FA();
+            $userData['google_2fa_secret'] = $google2fa-&gt;generateSecretKey();
+        } elseif (!$enable2FA) {
+            event(new UserDisabledTwoAuthEvent(Auth::user()));
+            $userData['google_2fa_secret'] = '';
+        }
+</code></pre>
+<p>The token is used in the <code>AuthController</code> to validate a given one-time password (the 6 digit number generate by the app).  This happens after a user with 2fa enabled successfully logs in with a correct username/password combination:</p>
+<pre><code class="language-php">public function postTwoFactor()
+    {
+        // Check that we have a session.
+        if ($userId = Session::pull('2fa_id')) {
+            $code = str_replace(' ', '', Binput::get('code'));
+
+            // Maybe a temp login here.
+            Auth::loginUsingId($userId);
+
+            $user = Auth::user();
+
+            $google2fa = new Google2FA();
+            $valid = $google2fa-&gt;verifyKey($user-&gt;google_2fa_secret, $code);
+
+            if ($valid) {
+                event(new UserPassedTwoAuthEvent($user));
+
+                event(new UserLoggedInEvent($user));
+
+                return Redirect::intended('dashboard');
+            } else {
+                event(new UserFailedTwoAuthEvent($user));
+
+                // Failed login, log back out.
+                Auth::logout();
+
+                return cachet_redirect('auth.login')-&gt;withError(trans('forms.login.invalid-token'));
+            }
+        }
+
+        return cachet_redirect('auth.login')-&gt;withError(trans('forms.login.invalid-token'));
+    }
+</code></pre>
+<p>This piece of code in particular seems to be where a 2FA library is used to validate a code using the <code>google_2fa_secret</code>:</p>
+<pre><code class="language-php">$google2fa = new Google2FA();
+$valid = $google2fa-&gt;verifyKey($user-&gt;google_2fa_secret, $code);
+</code></pre>
+<p>The 2FA implementation is very straightforward.  The library handles the underlying time-based 2fa logic, but the pieces of information required for this to work are the user&rsquo;s email, their <code>shared_secret_key</code> (the google_2fa_secret) and the current (unix) time.</p>
+<p>Pictured below is an example showing an example dashboard of this in practice:
+<img src="https://raw.githubusercontent.com/antonioribeiro/google2fa/8.x/docs/playground.jpg" alt="image"></p>
+<p>The TOTP 2FA <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm">algorithm</a> uses the <code>shared_secret_key</code> and the current Unix Epoc Time, to produce a valid one time key.  This relies on the randomness of the current Unix Epoc Time in combination with the shared secret to authenticate a user. Because it uses Unix Epoc Time, there are <a href="https://randomoracle.wordpress.com/2017/06/08/two-factor-authentication-a-matter-of-time/">mostly</a> not any issues comparing times across time zones.</p>
+<h3 id="2fa-secret-token---to-encrypt-or-not-to-encrypt">2FA Secret Token - to encrypt or not to encrypt<a class="anchor" href="#2fa-secret-token---to-encrypt-or-not-to-encrypt">#</a></h3>
+<p>The only secret component to the 2fa authentication scheme is the <code>shared_secret_key</code>.  This is shared between the server and the client (the user trying to log in) to create a token that is valid during a particular window of time (generally 30-60 seconds).</p>
+<p>Interestingly, the <code>google_2fa_secret</code> is stored in plain text.  Initially this seemed very problematic, but after further discussion and research it seems that this is actually an acceptable practice.</p>
+<p>While researching this question, I came across <a href="https://security.stackexchange.com/questions/42795/storing-seed-for-totp?rq=1">this stackoverflow post</a> which provides two answers that offer reasons for encrypting the token and reasons for not encrypting the token.</p>
+<h4 id="encrypting-the-token">Encrypting the token</h4>
+<p>The primary argument for encryption involves defense in depth and that the <code>shared_secret_key</code> should be treated like a password.</p>
+<p>If an attacker compromises the application database and acquires a shared secret key they will be able to generate valid TOTP codes for users of that application.  This would be problematic if a user uses a weak password that an attacker can guess <em>and</em> the TOTP shared secret key is compromised.</p>
+<p>A secondary consideration is that any person with access to the production database can acquire a users secret key and generate valid one-time codes at will.</p>
+<p>The <a href="https://tools.ietf.org/html/rfc4226#page-11">RFC</a> <em>recommends</em> encrypting the shared secret key:</p>
+<pre><code>   We also RECOMMEND storing the shared secrets securely, and more
+   specifically encrypting the shared secrets when stored using tamper-
+   resistant hardware encryption and exposing them only when required:
+   for example, the shared secret is decrypted when needed to verify an
+   HOTP value, and re-encrypted immediately to limit exposure in the RAM
+   for a short period of time.  The data store holding the shared
+   secrets MUST be in a secure area, to avoid as much as possible direct
+   attack on the validation system and secrets database.
+</code></pre>
+<h4 id="against-encrypting-the-token">Against encrypting the token</h4>
+<p>The primary argument against encryption is that it requires additional  engineering effort.  Essentially, every single time a 2FA code is changed or used (every login with 2fa enabled) a decryption event would occur.  This would require additional engineering effort to manage the encrypted key.</p>
+<p>The attack vector could be exploited in a <em>very</em> specific circumstance that 2FA is not intended to protect against.  If an attacker compromises the database they will likely have many other means to compromise user accounts or bypass authentication.  Depending on an organization&rsquo;s threat model it might not be worth the additional engineering effort to account for this scenario.</p>
+<h3 id="what-2fa-is-and-what-it-is-not">What 2FA is and what it is not<a class="anchor" href="#what-2fa-is-and-what-it-is-not">#</a></h3>
+<p>2FA is not intended as a way of providing absolute protection against authentication bypass attacks.  It is intended to provide an additional layer of authentication to protect a user who uses a weak or compromised password.</p>
+<p>It is intended to make authentication bypass <em>more difficult</em>, but not <em>impossible</em>.  The recent attack against <a href="https://threatpost.com/the-great-twitter-hack-what-we-know-what-we-dont/157538/">twitter</a>, for example, relied on SIM-swapping to bypass a 2FA mechanism.  Just like a password, a 2FA code can be compromised.</p>
+<h3 id="2fa-vulnerabilities-and-mitigation-strategies">2FA vulnerabilities and mitigation strategies<a class="anchor" href="#2fa-vulnerabilities-and-mitigation-strategies">#</a></h3>
+<ul>
+<li>
+<p>The 2FA code can be acquired by either intercepting the request when the code is entered or observing a user input the code.  A good precaution against this type of attack is to verify the each key entered is newer than the previous key.  The PHP library&rsquo;s README <a href="https://github.com/antonioribeiro/google2fa#validation-window">describes how to do this</a>.</p>
+</li>
+<li>
+<p>An attacker could potentially <a href="https://lukeplant.me.uk/blog/posts/6-digit-otp-for-two-factor-auth-is-brute-forceable-in-3-days/">brute force</a> a TOTP key if they have already acquired a user&rsquo;s password.  To mitigate against this attack vector, it would be a good idea to limit the number of incorrect 2FA attempts (similar to login attempts).</p>
+</li>
+<li>
+<p>2FA can be phished just like a password can.  The short time window (30-60 seconds) make the code a bit more difficult to use, but this attack can be automated.  Unfortunately, there isn&rsquo;t a good mechanism to mitigate this attack other than educating users against phishing attacks.</p>
+</li>
+<li>
+<p>A <a href="https://github.com/antonioribeiro/google2fa#using-a-bigger-and-prefixing-the-secret-key">bigger key</a> can help protect against the (highly improbable) situation of a key collision.</p>
+</li>
+</ul>
+<h2 id="handling-authentication-and-storing-sensitive-data">Handling Authentication and storing sensitive data<a class="anchor" href="#handling-authentication-and-storing-sensitive-data">#</a></h2>
+<ul>
+<li>
+<p>You should always hash and salt passwords. It is a good idea to rely on a well-supported third party library for this.</p>
+</li>
+<li>
+<p>When creating authentication tokens, you should use cryptographically secure pseudorandom functions.</p>
+</li>
+<li>
+<p>Allowing users to use 2FA is a great choice and by itself can help defend against authentication bypass attacks.  There are some additional steps that can be implemented to harden 2FA depending on your threat model.</p>
+</li>
+</ul>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+
+  
+    <a class="pagination__item" href="https://brandonsstewart.com/blog/protecting-against-command-injection/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Protecting Against Command Injection</a>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/boveus"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://brandonsstewart.com/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Email"
+         href="mailto:me@brandonsstewart.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://brandonsstewart.com/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+      <a class="social-icons__link" title="LinkedIn"
+         href="https://www.linkedin.com/in/brandon-scott-stewart/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://brandonsstewart.com/svg/linkedin.svg')"></div>
+      </a>
+    
+  
+     
+    
+     
+</div>
+
+            <p></p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

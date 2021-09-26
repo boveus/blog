@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Brandon&#39;s Blog</title>
+    <link>https://brandonsstewart.com/blog/</link>
+    <description>Recent content in Blogs on Brandon&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://brandonsstewart.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A guide to Burp Suite</title>
+      <link>https://brandonsstewart.com/blog/guide-to-burp-suite/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://brandonsstewart.com/blog/guide-to-burp-suite/</guid>
+      <description>In this article I will discuss some of the features I use in the Burp Suite tool. I will also provide a sample of some of the Ruby scripts that I have written and used in conjunction with it.
+What is Burp Suite? Portswigger, the creator of Burp Suite, describes the Community Edition of Burp Suite as a &amp;ldquo;feature-limited set of manual tools for exploring web security. Proxy your HTTPS traffic, edit and repeat requests, decode data, and more.</description>
+    </item>
+    
+    <item>
+      <title>Protecting Against Command Injection</title>
+      <link>https://brandonsstewart.com/blog/protecting-against-command-injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://brandonsstewart.com/blog/protecting-against-command-injection/</guid>
+      <description>In this post I will to walk through a few areas of the Redmine application and analyze how the authors of this application protected it against command injection vulnerabilities. I will also provide some general recommendations for how to safely call bash or other system calls in your own code.
+What is command injection? Command injection is a type of injection vulnerability which is #1 in the OWASP top 10 vulnerabilities.</description>
+    </item>
+    
+    <item>
+      <title>Secure Authentication Mechanisms</title>
+      <link>https://brandonsstewart.com/blog/secure-authentication-mechanisms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://brandonsstewart.com/blog/secure-authentication-mechanisms/</guid>
+      <description>In this post I will walk through a few areas of the Cachet application and analyze how the authors handled various authentication mechanisms and stored sensitive data. I will cover some of the best practices related to storing user passwords and other secure tokens as well as how the authors implemented two factor authentication. I will go into detail about some of the vulnerabilities in 2FA and how to harden a 2FA implementation.</description>
+    </item>
+    
+  </channel>
+</rss>

