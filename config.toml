@@ -7,7 +7,7 @@ googleAnalytics = "UA-172938556-1"
 
 [params]
   github = "https://github.com/boveus"
-  email = "mailto:brandon.s.stewart88@gmail.com"
+  email = "mailto:me@brandonsstewart.com"
   linkedin = "https://www.linkedin.com/in/brandon-scott-stewart/"
   iconTitles = ["GitHub", "Email", 'LinkedIn']
   Description = "Brandon Stewarts personal blog site. Most of my posts involve Application Security and Software Development"
