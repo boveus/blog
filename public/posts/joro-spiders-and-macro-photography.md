@@ -22,4 +22,4 @@ But I keep coming back to the joro spiders. They're big enough to photograph wit
 
 If you're in the southeast US, keep an eye out for them in late summer and fall. They're hard to miss once you start looking.
 
-More photos in the [library](#/library/macro/insects/spiders/joro-spiders).
+More photos in the [library](#/library/macro/bugs/joro-spiders).

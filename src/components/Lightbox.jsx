@@ -26,6 +26,8 @@ function Lightbox({ photo, onClose }) {
       ? photo.src
       : import.meta.env.BASE_URL + photo.src)
 
+  const hasInfo = photo.caption || photo.species || photo.description || photo.location
+
   return (
     <div
       ref={overlayRef}
@@ -38,13 +40,24 @@ function Lightbox({ photo, onClose }) {
         if (e.target === e.currentTarget) onClose()
       }}
     >
+      <button
+        className="lightbox-close"
+        onClick={(e) => { e.stopPropagation(); onClose() }}
+        aria-label="Close lightbox"
+        type="button"
+      >
+        &times;
+      </button>
       <img
         src={src}
         alt={photo.alt || photo.caption || ''}
       />
-      {photo.caption && (
-        <div className="lightbox-caption" onClick={(e) => e.stopPropagation()}>
-          {photo.caption}
+      {hasInfo && (
+        <div className="lightbox-info" onClick={(e) => e.stopPropagation()}>
+          {photo.caption && <div className="lightbox-title">{photo.caption}</div>}
+          {photo.species && <div className="lightbox-species">{photo.species}</div>}
+          {photo.description && <div className="lightbox-description">{photo.description}</div>}
+          {photo.location && <div className="lightbox-location">{photo.location}</div>}
         </div>
       )}
     </div>

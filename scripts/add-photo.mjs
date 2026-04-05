@@ -84,7 +84,7 @@ function syncTree(node, dirTree, pathPrefix) {
   for (const file of dirTree.files) {
     const src = `${pathPrefix}/${file}`;
     if (!existingSrcs.has(src)) {
-      node.photos.push({ src });
+      node.photos.push({ src, alt: "", caption: "", species: "", location: "", description: "" });
       added.push(src);
     }
   }
