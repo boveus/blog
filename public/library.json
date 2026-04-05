@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "name": "Macro",
+      "slug": "macro",
+      "categories": [
+        {
+          "name": "Insects",
+          "slug": "insects",
+          "categories": [
+            {
+              "name": "Spiders",
+              "slug": "spiders",
+              "categories": [
+                {
+                  "name": "Joro Spiders",
+                  "slug": "joro-spiders",
+                  "categories": [],
+                  "photos": []
+                }
+              ],
+              "photos": []
+            }
+          ],
+          "photos": []
+        }
+      ],
+      "photos": []
+    },
+    {
+      "name": "Landscape",
+      "slug": "landscape",
+      "categories": [],
+      "photos": []
+    },
+    {
+      "name": "Wildlife",
+      "slug": "wildlife",
+      "categories": [],
+      "photos": []
+    }
+  ],
+  "photos": []
+}
