@@ -40,6 +40,16 @@
                   "src": "photos/macro/insects/bees/bee.webp"
                 }
               ]
+            },
+            {
+              "name": "beetles",
+              "slug": "beetles",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/insects/beetles/longhorn-beetle.webp"
+                }
+              ]
             }
           ],
           "photos": []
