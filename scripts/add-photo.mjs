@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
-import { readFileSync, writeFileSync } from "fs";
-import { createInterface } from "readline";
-import { resolve, dirname } from "path";
+import { readFileSync, writeFileSync, readdirSync, statSync } from "fs";
+import { resolve, dirname, relative, extname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const LIBRARY_PATH = resolve(__dirname, "../public/library.json");
+const PUBLIC_DIR = resolve(__dirname, "../public");
+const LIBRARY_PATH = resolve(PUBLIC_DIR, "library.json");
+const PHOTOS_DIR = resolve(PUBLIC_DIR, "photos");
 
-const rl = createInterface({ input: process.stdin, output: process.stdout });
-const ask = (q) => new Promise((r) => rl.question(q, r));
+const PHOTO_EXTENSIONS = new Set([".webp", ".jpg", ".jpeg", ".png", ".gif", ".avif"]);
 
 function loadLibrary() {
   return JSON.parse(readFileSync(LIBRARY_PATH, "utf-8"));
@@ -19,111 +19,137 @@ function saveLibrary(data) {
   writeFileSync(LIBRARY_PATH, JSON.stringify(data, null, 2) + "\n");
 }
 
-/** Flatten category tree into a list of { path, node } for display */
-function flattenCategories(categories, prefix = "") {
-  const result = [];
-  for (const cat of categories) {
-    const path = prefix ? `${prefix} > ${cat.name}` : cat.name;
-    result.push({ path, node: cat });
-    if (cat.categories?.length) {
-      result.push(...flattenCategories(cat.categories, path));
+/** Convert a slug like "joro-spiders" to a display name like "Joro Spiders" */
+function slugToName(slug) {
+  return slug
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
+/**
+ * Recursively scan a directory and return a tree structure:
+ * { dirs: { [name]: subtree }, files: [filename, ...] }
+ */
+function scanDir(dir) {
+  const result = { dirs: {}, files: [] };
+  let entries;
+  try {
+    entries = readdirSync(dir);
+  } catch {
+    return result;
+  }
+  for (const entry of entries.sort()) {
+    const fullPath = resolve(dir, entry);
+    const stat = statSync(fullPath);
+    if (stat.isDirectory()) {
+      result.dirs[entry] = scanDir(fullPath);
+    } else if (PHOTO_EXTENSIONS.has(extname(entry).toLowerCase())) {
+      result.files.push(entry);
     }
   }
   return result;
 }
 
-async function pickCategory(library) {
-  const flat = flattenCategories(library.categories);
-
-  console.log("\nCategories:");
-  console.log("  0) [root level]");
-  flat.forEach((c, i) => console.log(`  ${i + 1}) ${c.path}`));
-  console.log(`  n) Create a new category`);
-
-  const choice = await ask("\nAdd photo to which category? ");
-
-  if (choice === "n" || choice === "N") {
-    return await createCategory(library, flat);
+/**
+ * Find or create a category node by slug within a parent node.
+ */
+function findOrCreateCategory(parent, slug) {
+  if (!parent.categories) parent.categories = [];
+  let cat = parent.categories.find((c) => c.slug === slug);
+  if (!cat) {
+    cat = { name: slugToName(slug), slug, categories: [], photos: [] };
+    parent.categories.push(cat);
+    return { node: cat, created: true };
   }
-
-  const idx = parseInt(choice, 10);
-  if (idx === 0) return library;
-  if (idx >= 1 && idx <= flat.length) return flat[idx - 1].node;
-
-  console.log("Invalid choice, using root.");
-  return library;
+  if (!cat.photos) cat.photos = [];
+  if (!cat.categories) cat.categories = [];
+  return { node: cat, created: false };
 }
 
-async function createCategory(library, flat) {
-  console.log("\nWhere should the new category go?");
-  console.log("  0) [root level]");
-  flat.forEach((c, i) => console.log(`  ${i + 1}) ${c.path}`));
+/**
+ * Recursively sync the directory tree into the library tree.
+ * Returns { added: string[], removedPhotos: string[], createdCategories: string[] }
+ */
+function syncTree(node, dirTree, pathPrefix) {
+  const added = [];
+  const removed = [];
+  const createdCategories = [];
 
-  const parentChoice = await ask("\nParent? ");
-  const parentIdx = parseInt(parentChoice, 10);
-  let parent;
-  if (parentIdx === 0) {
-    parent = library;
-  } else if (parentIdx >= 1 && parentIdx <= flat.length) {
-    parent = flat[parentIdx - 1].node;
-  } else {
-    console.log("Invalid choice, using root.");
-    parent = library;
+  // --- Sync photos in the current directory ---
+  if (!node.photos) node.photos = [];
+  const existingSrcs = new Set(node.photos.map((p) => p.src));
+
+  // Add new photo files
+  for (const file of dirTree.files) {
+    const src = `${pathPrefix}/${file}`;
+    if (!existingSrcs.has(src)) {
+      node.photos.push({ src });
+      added.push(src);
+    }
   }
 
-  const name = await ask("Category name: ");
-  const slugDefault = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-  const slug = (await ask(`Slug [${slugDefault}]: `)) || slugDefault;
+  // Remove photos whose files no longer exist on disk
+  const diskFiles = new Set(dirTree.files.map((f) => `${pathPrefix}/${f}`));
+  const before = node.photos.length;
+  const keptPhotos = [];
+  for (const photo of node.photos) {
+    if (diskFiles.has(photo.src)) {
+      keptPhotos.push(photo);
+    } else {
+      removed.push(photo.src);
+    }
+  }
+  node.photos = keptPhotos;
 
-  const newCat = { name, slug, categories: [], photos: [] };
-  parent.categories.push(newCat);
-  return newCat;
+  // --- Recurse into subdirectories ---
+  for (const [dirName, subtree] of Object.entries(dirTree.dirs)) {
+    const { node: childNode, created } = findOrCreateCategory(node, dirName);
+    if (created) {
+      createdCategories.push(`${pathPrefix}/${dirName}`);
+    }
+    const childResult = syncTree(childNode, subtree, `${pathPrefix}/${dirName}`);
+    added.push(...childResult.added);
+    removed.push(...childResult.removed);
+    createdCategories.push(...childResult.createdCategories);
+  }
+
+  return { added, removed, createdCategories };
 }
 
-async function main() {
+function main() {
   const library = loadLibrary();
-  const target = await pickCategory(library);
+  const diskTree = scanDir(PHOTOS_DIR);
 
-  console.log("\nFill in the photo details (press Enter to skip optional fields):\n");
+  console.log("Scanning photos directory...\n");
 
-  const src = await ask("  src (required, e.g. images/macro/photo.jpg): ");
-  if (!src) {
-    console.log("src is required. Aborting.");
-    rl.close();
-    process.exit(1);
+  const { added, removed, createdCategories } = syncTree(library, diskTree, "photos");
+
+  if (createdCategories.length) {
+    console.log(`📁 Created ${createdCategories.length} new category(s):`);
+    createdCategories.forEach((c) => console.log(`   + ${c}`));
+    console.log();
   }
 
-  const alt = await ask("  alt (optional): ");
-  const caption = await ask("  caption (optional): ");
-
-  const photo = { src };
-  if (alt) photo.alt = alt;
-  if (caption) photo.caption = caption;
-
-  console.log("\nAdding:");
-  console.log(JSON.stringify(photo, null, 2));
-
-  const confirm = await ask("\nLook good? (Y/n) ");
-  if (confirm && confirm.toLowerCase() === "n") {
-    console.log("Aborted.");
-    rl.close();
-    process.exit(0);
+  if (added.length) {
+    console.log(`📸 Added ${added.length} new photo(s):`);
+    added.forEach((p) => console.log(`   + ${p}`));
+    console.log();
   }
 
-  target.photos.push(photo);
+  if (removed.length) {
+    console.log(`🗑  Removed ${removed.length} stale photo(s):`);
+    removed.forEach((p) => console.log(`   - ${p}`));
+    console.log();
+  }
+
+  if (!added.length && !removed.length && !createdCategories.length) {
+    console.log("✅ library.json is already up to date — nothing to do.");
+    return;
+  }
+
   saveLibrary(library);
-  console.log(`\nSaved to ${LIBRARY_PATH}`);
-
-  const again = await ask("Add another photo? (y/N) ");
-  if (again && again.toLowerCase() === "y") {
-    rl.close();
-    return main();
-  }
-
-  rl.close();
+  console.log(`✅ Saved updated library to ${relative(process.cwd(), LIBRARY_PATH)}`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+main();

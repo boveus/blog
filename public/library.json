@@ -25,6 +25,9 @@
                     },
                     {
                       "src": "photos/macro/insects/spiders/joro-spiders/joro_3.webp"
+                    },
+                    {
+                      "src": "photos/macro/insects/spiders/joro-spiders/joro_4.webp"
                     }
                   ]
                 },
@@ -48,6 +51,9 @@
               "photos": [
                 {
                   "src": "photos/macro/insects/bees/bee.webp"
+                },
+                {
+                  "src": "photos/macro/insects/bees/bee_2.webp"
                 }
               ]
             },
@@ -68,6 +74,52 @@
               "photos": [
                 {
                   "src": "photos/macro/insects/butterflies/skipper.webp"
+                }
+              ]
+            },
+            {
+              "name": "Ants",
+              "slug": "ants",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/insects/ants/carpenter-ants.webp"
+                },
+                {
+                  "src": "photos/macro/insects/ants/carpenter-ants2.webp"
+                },
+                {
+                  "src": "photos/macro/insects/ants/carpenter-ants3.webp"
+                }
+              ]
+            },
+            {
+              "name": "Flies",
+              "slug": "flies",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/insects/flies/robber-fly.webp"
+                }
+              ]
+            },
+            {
+              "name": "Wasps",
+              "slug": "wasps",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/insects/wasps/paper-wasp.webp"
+                }
+              ]
+            },
+            {
+              "name": "Moths",
+              "slug": "moths",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/insects/moths/webworm-moth.webp"
                 }
               ]
             }
