@@ -21,7 +21,7 @@
                       "src": "photos/macro/insects/spiders/joro-spiders/joro.webp"
                     },
                     {
-                      "src": "photos/macro/insects/spiders/joro-spiders/joro_2.webp" 
+                      "src": "photos/macro/insects/spiders/joro-spiders/joro_2.webp"
                     },
                     {
                       "src": "photos/macro/insects/spiders/joro-spiders/joro_3.webp"
@@ -30,6 +30,16 @@
                 }
               ],
               "photos": []
+            },
+            {
+              "name": "Bees",
+              "slug": "bees",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/insects/bees/bee.webp"
+                }
+              ]
             }
           ],
           "photos": []
