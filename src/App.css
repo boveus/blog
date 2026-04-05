@@ -169,9 +169,9 @@
   position: absolute;
   inset: -20px;
   z-index: 0;
-  opacity: 0.05;
+  opacity: 0.55;
   filter: blur(6px);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
@@ -184,7 +184,7 @@
 
 @media (prefers-color-scheme: dark) {
   .intro-bg {
-    opacity: 0.08;
+    opacity: 0.55;
   }
 }
 
@@ -246,6 +246,20 @@
   margin-top: 2px;
 }
 
+.photo-description {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-light);
+  margin-top: 2px;
+}
+
+.photo-location {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-light);
+  margin-top: 2px;
+}
+
 /* Lightbox */
 .lightbox-overlay {
   position: fixed;
@@ -297,37 +311,29 @@
 
 .lightbox-info {
   position: fixed;
-  bottom: 24px;
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   max-width: 600px;
   width: 90vw;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 14px;
+  border-radius: 6px;
 }
 
 .lightbox-title {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  color: #eee;
-  margin-bottom: 4px;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .lightbox-species {
   font-style: italic;
-  font-size: 0.85rem;
-  color: #aaa;
-  margin-bottom: 4px;
-}
-
-.lightbox-description {
-  font-size: 0.85rem;
-  color: #bbb;
-  margin-bottom: 4px;
-}
-
-.lightbox-location {
   font-size: 0.8rem;
-  color: #888;
+  color: #ddd;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Blog posts list */

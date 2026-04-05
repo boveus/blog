@@ -26,7 +26,7 @@ function Lightbox({ photo, onClose }) {
       ? photo.src
       : import.meta.env.BASE_URL + photo.src)
 
-  const hasInfo = photo.caption || photo.species || photo.description || photo.location
+  const hasInfo = photo.caption || photo.species
 
   return (
     <div
@@ -56,8 +56,6 @@ function Lightbox({ photo, onClose }) {
         <div className="lightbox-info" onClick={(e) => e.stopPropagation()}>
           {photo.caption && <div className="lightbox-title">{photo.caption}</div>}
           {photo.species && <div className="lightbox-species">{photo.species}</div>}
-          {photo.description && <div className="lightbox-description">{photo.description}</div>}
-          {photo.location && <div className="lightbox-location">{photo.location}</div>}
         </div>
       )}
     </div>

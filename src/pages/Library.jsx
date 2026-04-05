@@ -150,10 +150,12 @@ function Library() {
                 alt={photo.alt || ''}
                 loading="lazy"
               />
-              {(photo.caption || photo.species) && (
+              {(photo.caption || photo.species || photo.description || photo.location) && (
                 <div className="photo-info">
                   {photo.caption && <span>{photo.caption}</span>}
                   {photo.species && <span className="photo-species">{photo.species}</span>}
+                  {photo.description && <span className="photo-description">{photo.description}</span>}
+                  {photo.location && <span className="photo-location">{photo.location}</span>}
                 </div>
               )}
             </button>
