@@ -16,7 +16,11 @@
                   "name": "Joro Spiders",
                   "slug": "joro-spiders",
                   "categories": [],
-                  "photos": []
+                  "photos": [
+                    {
+                      "src": "photos/macro/insects/spiders/joro-spiders/joro.webp"
+                    }
+                  ]
                 }
               ],
               "photos": []
