@@ -1,4 +1,4 @@
-import { Routes, Route, NavLink } from 'react-router-dom'
+import { Routes, Route, NavLink, Link } from 'react-router-dom'
 import Library from './pages/Library.jsx'
 import Posts from './pages/Posts.jsx'
 import Post from './pages/Post.jsx'
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="site">
       <header className="site-header">
-        <h1><a href="#/">Brandon Stewart</a></h1>
+        <h1><Link to="/">Brandon Stewart</Link></h1>
         <nav className="site-nav">
           <NavLink to="/">Library</NavLink>
           <NavLink to="/posts">Posts</NavLink>

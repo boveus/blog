@@ -11,27 +11,33 @@ function Post() {
   const [lightboxPhoto, setLightboxPhoto] = useState(null)
 
   useEffect(() => {
-    // Load post metadata
-    fetch(import.meta.env.BASE_URL + 'posts/index.json')
+    const controller = new AbortController()
+    const { signal } = controller
+
+    fetch(import.meta.env.BASE_URL + 'posts/index.json', { signal })
       .then(r => r.json())
       .then(data => {
         const post = data.posts.find(p => p.slug === slug)
         setMeta(post || null)
       })
-      .catch(() => setMeta(null))
+      .catch(err => {
+        if (!signal.aborted) setMeta(null)
+      })
 
-    // Load markdown content
-    fetch(import.meta.env.BASE_URL + `posts/${slug}.md`)
+    fetch(import.meta.env.BASE_URL + `posts/${slug}.md`, { signal })
       .then(r => {
         if (!r.ok) throw new Error('Not found')
         return r.text()
       })
       .then(text => {
-        // Strip frontmatter if present
         const stripped = text.replace(/^---[\s\S]*?---\n*/, '')
         setContent(stripped)
       })
-      .catch(() => setContent('Post not found.'))
+      .catch(err => {
+        if (!signal.aborted) setContent('Post not found.')
+      })
+
+    return () => controller.abort()
   }, [slug])
 
   if (meta === null && content === '') return null
@@ -52,22 +58,25 @@ function Post() {
           remarkPlugins={[remarkGfm]}
           components={{
             img: ({ src, alt, ...props }) => {
-              // Resolve relative image paths to the photos dir
               const resolvedSrc = src?.startsWith('http')
                 ? src
                 : import.meta.env.BASE_URL + src
               return (
                 <figure className="post-photo">
-                  <img
-                    {...props}
-                    src={resolvedSrc}
-                    alt={alt || ''}
-                    loading="lazy"
-                    style={{ cursor: 'pointer' }}
+                  <button
+                    type="button"
+                    className="post-photo-button"
                     onClick={() =>
                       setLightboxPhoto({ src: resolvedSrc, caption: alt })
                     }
-                  />
+                  >
+                    <img
+                      {...props}
+                      src={resolvedSrc}
+                      alt={alt || ''}
+                      loading="lazy"
+                    />
+                  </button>
                   {alt && <figcaption>{alt}</figcaption>}
                 </figure>
               )

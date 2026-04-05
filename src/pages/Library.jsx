@@ -97,11 +97,12 @@ function Library() {
       {/* Photos */}
       {photos.length > 0 && (
         <div className="photo-grid" style={{ marginTop: '24px' }}>
-          {photos.map((photo, i) => (
-            <div
-              key={i}
+          {photos.map((photo) => (
+            <button
+              key={photo.src}
               className="photo-card"
               onClick={() => setLightboxPhoto(photo)}
+              type="button"
             >
               <img
                 src={import.meta.env.BASE_URL + photo.src}
@@ -111,7 +112,7 @@ function Library() {
               {photo.caption && (
                 <div className="photo-info">{photo.caption}</div>
               )}
-            </div>
+            </button>
           ))}
         </div>
       )}

@@ -1,7 +1,13 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 function Lightbox({ photo, onClose }) {
+  const overlayRef = useRef(null)
+  const previousFocus = useRef(null)
+
   useEffect(() => {
+    previousFocus.current = document.activeElement
+    overlayRef.current?.focus()
+
     const handleKey = (e) => {
       if (e.key === 'Escape') onClose()
     }
@@ -10,6 +16,7 @@ function Lightbox({ photo, onClose }) {
     return () => {
       document.removeEventListener('keydown', handleKey)
       document.body.style.overflow = ''
+      previousFocus.current?.focus()
     }
   }, [onClose])
 
@@ -20,14 +27,25 @@ function Lightbox({ photo, onClose }) {
       : import.meta.env.BASE_URL + photo.src)
 
   return (
-    <div className="lightbox-overlay" onClick={onClose}>
+    <div
+      ref={overlayRef}
+      className="lightbox-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-label={photo.caption || photo.alt || 'Photo lightbox'}
+      tabIndex={-1}
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose()
+      }}
+    >
       <img
         src={src}
         alt={photo.alt || photo.caption || ''}
-        onClick={(e) => e.stopPropagation()}
       />
       {photo.caption && (
-        <div className="lightbox-caption">{photo.caption}</div>
+        <div className="lightbox-caption" onClick={(e) => e.stopPropagation()}>
+          {photo.caption}
+        </div>
       )}
     </div>
   )
