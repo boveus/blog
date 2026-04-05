@@ -27,6 +27,16 @@
                       "src": "photos/macro/insects/spiders/joro-spiders/joro_3.webp"
                     }
                   ]
+                },
+                {
+                  "name": "Orb Weavers",
+                  "slug": "orb-weavers",
+                  "categories": [],
+                  "photos": [
+                    {
+                      "src": "photos/macro/insects/spiders/orb-weavers/orb-weaver.webp"
+                    }
+                  ]
                 }
               ],
               "photos": []
@@ -48,6 +58,16 @@
               "photos": [
                 {
                   "src": "photos/macro/insects/beetles/longhorn-beetle.webp"
+                }
+              ]
+            },
+            {
+              "name": "butterflies",
+              "slug": "butterflies",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/insects/butterflies/skipper.webp"
                 }
               ]
             }
