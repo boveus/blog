@@ -5,44 +5,39 @@
       "slug": "macro",
       "categories": [
         {
-          "name": "Insects",
-          "slug": "insects",
+          "name": "Bugs",
+          "slug": "bugs",
           "categories": [
             {
-              "name": "Spiders",
-              "slug": "spiders",
-              "categories": [
+              "name": "Ants",
+              "slug": "ants",
+              "categories": [],
+              "photos": [
                 {
-                  "name": "Joro Spiders",
-                  "slug": "joro-spiders",
-                  "categories": [],
-                  "photos": [
-                    {
-                      "src": "photos/macro/insects/spiders/joro-spiders/joro.webp"
-                    },
-                    {
-                      "src": "photos/macro/insects/spiders/joro-spiders/joro_2.webp"
-                    },
-                    {
-                      "src": "photos/macro/insects/spiders/joro-spiders/joro_3.webp"
-                    },
-                    {
-                      "src": "photos/macro/insects/spiders/joro-spiders/joro_4.webp"
-                    }
-                  ]
+                  "src": "photos/macro/bugs/ants/carpenter-ants.webp",
+                  "alt": "Carpenter ants on a wooden surface",
+                  "caption": "Carpenter Ants",
+                  "species": "Camponotus sp. (Carpenter Ant)",
+                  "location": "Georgia",
+                  "description": "A group of carpenter ants navigating along a wooden surface."
                 },
                 {
-                  "name": "Orb Weavers",
-                  "slug": "orb-weavers",
-                  "categories": [],
-                  "photos": [
-                    {
-                      "src": "photos/macro/insects/spiders/orb-weavers/orb-weaver.webp"
-                    }
-                  ]
+                  "src": "photos/macro/bugs/ants/carpenter-ants2.webp",
+                  "alt": "Close-up of carpenter ants",
+                  "caption": "Carpenter Ants",
+                  "species": "Camponotus sp. (Carpenter Ant)",
+                  "location": "Georgia",
+                  "description": "Detailed macro shot showing the head and mandibles of a carpenter ant."
+                },
+                {
+                  "src": "photos/macro/bugs/ants/carpenter-ants3.webp",
+                  "alt": "Carpenter ants foraging",
+                  "caption": "Carpenter Ants",
+                  "species": "Camponotus sp. (Carpenter Ant)",
+                  "location": "Georgia",
+                  "description": "Carpenter ants working together while foraging."
                 }
-              ],
-              "photos": []
+              ]
             },
             {
               "name": "Bees",
@@ -50,46 +45,50 @@
               "categories": [],
               "photos": [
                 {
-                  "src": "photos/macro/insects/bees/bee.webp"
+                  "src": "photos/macro/bugs/bees/bee.webp",
+                  "alt": "Bee collecting pollen",
+                  "caption": "Honeybee",
+                  "species": "Apis mellifera (Western Honeybee)",
+                  "location": "Georgia",
+                  "description": "A honeybee visiting a flower, covered in pollen."
                 },
                 {
-                  "src": "photos/macro/insects/bees/bee_2.webp"
+                  "src": "photos/macro/bugs/bees/bee_2.webp",
+                  "alt": "Bee on a flower",
+                  "caption": "Honeybee",
+                  "species": "Apis mellifera (Western Honeybee)",
+                  "location": "Georgia",
+                  "description": "Close-up of a honeybee foraging on a bloom."
                 }
               ]
             },
             {
-              "name": "beetles",
+              "name": "Beetles",
               "slug": "beetles",
               "categories": [],
               "photos": [
                 {
-                  "src": "photos/macro/insects/beetles/longhorn-beetle.webp"
+                  "src": "photos/macro/bugs/beetles/longhorn-beetle.webp",
+                  "alt": "Longhorn beetle on a leaf",
+                  "caption": "Longhorn Beetle",
+                  "species": "Cerambycidae family (Longhorn Beetle)",
+                  "location": "Georgia",
+                  "description": "A longhorn beetle resting on a leaf, showing its distinctive long antennae."
                 }
               ]
             },
             {
-              "name": "butterflies",
+              "name": "Butterflies",
               "slug": "butterflies",
               "categories": [],
               "photos": [
                 {
-                  "src": "photos/macro/insects/butterflies/skipper.webp"
-                }
-              ]
-            },
-            {
-              "name": "Ants",
-              "slug": "ants",
-              "categories": [],
-              "photos": [
-                {
-                  "src": "photos/macro/insects/ants/carpenter-ants.webp"
-                },
-                {
-                  "src": "photos/macro/insects/ants/carpenter-ants2.webp"
-                },
-                {
-                  "src": "photos/macro/insects/ants/carpenter-ants3.webp"
+                  "src": "photos/macro/bugs/butterflies/skipper.webp",
+                  "alt": "Skipper butterfly perched on a flower",
+                  "caption": "Skipper Butterfly",
+                  "species": "Hesperiidae family (Skipper)",
+                  "location": "Georgia",
+                  "description": "A small skipper butterfly resting with its wings folded."
                 }
               ]
             },
@@ -99,17 +98,51 @@
               "categories": [],
               "photos": [
                 {
-                  "src": "photos/macro/insects/flies/robber-fly.webp"
+                  "src": "photos/macro/bugs/flies/robber-fly.webp",
+                  "alt": "Robber fly perched on a stem",
+                  "caption": "Robber Fly",
+                  "species": "Asilidae family (Robber Fly)",
+                  "location": "Georgia",
+                  "description": "A predatory robber fly waiting to ambush prey from its perch."
                 }
               ]
             },
             {
-              "name": "Wasps",
-              "slug": "wasps",
+              "name": "Joro Spiders",
+              "slug": "joro-spiders",
               "categories": [],
               "photos": [
                 {
-                  "src": "photos/macro/insects/wasps/paper-wasp.webp"
+                  "src": "photos/macro/bugs/joro-spiders/joro.webp",
+                  "alt": "Joro spider in its golden web",
+                  "caption": "Joro Spider",
+                  "species": "Trichonephila clavata (Joro Spider)",
+                  "location": "Georgia",
+                  "description": "A female Joro spider displayed in her golden orb web."
+                },
+                {
+                  "src": "photos/macro/bugs/joro-spiders/joro_2.webp",
+                  "alt": "Joro spider close-up",
+                  "caption": "Joro Spider",
+                  "species": "Trichonephila clavata (Joro Spider)",
+                  "location": "Georgia",
+                  "description": "Detailed macro view of a Joro spider's vibrant coloring and patterns."
+                },
+                {
+                  "src": "photos/macro/bugs/joro-spiders/joro_3.webp",
+                  "alt": "Joro spider on web",
+                  "caption": "Joro Spider",
+                  "species": "Trichonephila clavata (Joro Spider)",
+                  "location": "Georgia",
+                  "description": "A Joro spider suspended in the center of its web against a blurred background."
+                },
+                {
+                  "src": "photos/macro/bugs/joro-spiders/joro_4.webp",
+                  "alt": "Joro spider from below",
+                  "caption": "Joro Spider",
+                  "species": "Trichonephila clavata (Joro Spider)",
+                  "location": "Georgia",
+                  "description": "Underside view of a Joro spider highlighting its leg markings."
                 }
               ]
             },
@@ -119,7 +152,42 @@
               "categories": [],
               "photos": [
                 {
-                  "src": "photos/macro/insects/moths/webworm-moth.webp"
+                  "src": "photos/macro/bugs/moths/webworm-moth.webp",
+                  "alt": "Webworm moth resting on a surface",
+                  "caption": "Webworm Moth",
+                  "species": "Hyphantria cunea (Fall Webworm Moth)",
+                  "location": "Georgia",
+                  "description": "A white webworm moth with its delicate wings spread flat."
+                }
+              ]
+            },
+            {
+              "name": "Orb Weavers",
+              "slug": "orb-weavers",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/bugs/orb-weavers/orb-weaver.webp",
+                  "alt": "Orb weaver spider in its web",
+                  "caption": "Orb Weaver",
+                  "species": "Araneidae family (Orb Weaver)",
+                  "location": "Georgia",
+                  "description": "An orb weaver spider sitting at the center of its intricately woven web."
+                }
+              ]
+            },
+            {
+              "name": "Wasps",
+              "slug": "wasps",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/bugs/wasps/paper-wasp.webp",
+                  "alt": "Paper wasp on its nest",
+                  "caption": "Paper Wasp",
+                  "species": "Polistes sp. (Paper Wasp)",
+                  "location": "Georgia",
+                  "description": "A paper wasp tending to its nest, showing its slender body and folded wings."
                 }
               ]
             }
