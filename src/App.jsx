@@ -18,7 +18,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Library />} />
-          <Route path="/library/*" element={<Library />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/posts/:slug" element={<Post />} />
         </Routes>
