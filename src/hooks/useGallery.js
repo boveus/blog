@@ -19,7 +19,7 @@ export default function useGallery(searchQuery, activeCategory) {
 
   useEffect(() => {
     const controller = new AbortController()
-    fetch(import.meta.env.BASE_URL + 'library.json', { signal: controller.signal })
+    fetch(import.meta.env.BASE_URL + 'library.json?v=' + Date.now(), { signal: controller.signal })
       .then(r => r.json())
       .then(setLibrary)
       .catch(() => setLibrary({ categories: [], photos: [] }))
