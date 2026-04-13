@@ -15,27 +15,27 @@
               "photos": [
                 {
                   "src": "photos/macro/bugs/ants/carpenter-ants.webp",
-                  "alt": "Carpenter ants on a wooden surface",
+                  "alt": "Carpenter ants and winged alates on a surface",
                   "caption": "Carpenter Ants",
                   "species": "Camponotus sp. (Carpenter Ant)",
                   "location": "Georgia",
-                  "description": "A group of carpenter ants navigating along a wooden surface."
+                  "description": "Carpenter ant workers and winged alates (reproductives) gathered along a surface edge during a nuptial flight emergence."
                 },
                 {
                   "src": "photos/macro/bugs/ants/carpenter-ants2.webp",
-                  "alt": "Close-up of carpenter ants",
+                  "alt": "Carpenter ant workers and alates near wood",
                   "caption": "Carpenter Ants",
                   "species": "Camponotus sp. (Carpenter Ant)",
                   "location": "Georgia",
-                  "description": "Detailed macro shot showing the head and mandibles of a carpenter ant."
+                  "description": "Carpenter ant workers alongside winged alates emerging from a colony near a wooden edge."
                 },
                 {
                   "src": "photos/macro/bugs/ants/carpenter-ants3.webp",
-                  "alt": "Carpenter ants foraging",
+                  "alt": "Winged carpenter ant alates congregating",
                   "caption": "Carpenter Ants",
                   "species": "Camponotus sp. (Carpenter Ant)",
                   "location": "Georgia",
-                  "description": "Carpenter ants working together while foraging."
+                  "description": "Winged carpenter ant reproductives congregating on a surface during a nuptial flight event."
                 }
               ]
             },
@@ -46,19 +46,19 @@
               "photos": [
                 {
                   "src": "photos/macro/bugs/bees/bee.webp",
-                  "alt": "Bee collecting pollen",
-                  "caption": "Honeybee",
-                  "species": "Apis mellifera (Western Honeybee)",
+                  "alt": "Eastern carpenter bee on an orange flower",
+                  "caption": "Eastern Carpenter Bee",
+                  "species": "Xylocopa virginica (Eastern Carpenter Bee)",
                   "location": "Georgia",
-                  "description": "A honeybee visiting a flower, covered in pollen."
+                  "description": "An eastern carpenter bee foraging on an orange coreopsis bloom, showing its fuzzy yellow thorax and robust body."
                 },
                 {
                   "src": "photos/macro/bugs/bees/bee_2.webp",
-                  "alt": "Bee on a flower",
+                  "alt": "Honeybee on a purple aster",
                   "caption": "Honeybee",
                   "species": "Apis mellifera (Western Honeybee)",
                   "location": "Georgia",
-                  "description": "Close-up of a honeybee foraging on a bloom."
+                  "description": "A honeybee collecting pollen from a purple aster flower."
                 }
               ]
             },
@@ -69,11 +69,11 @@
               "photos": [
                 {
                   "src": "photos/macro/bugs/beetles/longhorn-beetle.webp",
-                  "alt": "Longhorn beetle on a leaf",
+                  "alt": "Longhorn beetle on a metal surface",
                   "caption": "Longhorn Beetle",
                   "species": "Cerambycidae family (Longhorn Beetle)",
                   "location": "Georgia",
-                  "description": "A longhorn beetle resting on a leaf, showing its distinctive long antennae."
+                  "description": "A longhorn beetle resting on a painted metal surface, displaying its long antennae and reddish-orange legs."
                 }
               ]
             },
@@ -84,11 +84,11 @@
               "photos": [
                 {
                   "src": "photos/macro/bugs/butterflies/skipper.webp",
-                  "alt": "Skipper butterfly perched on a flower",
+                  "alt": "Skipper butterfly nectaring on a marigold",
                   "caption": "Skipper Butterfly",
                   "species": "Hesperiidae family (Skipper)",
                   "location": "Georgia",
-                  "description": "A small skipper butterfly resting with its wings folded."
+                  "description": "A skipper butterfly nectaring on an orange marigold with its wings spread open."
                 }
               ]
             },
@@ -99,11 +99,11 @@
               "photos": [
                 {
                   "src": "photos/macro/bugs/flies/robber-fly.webp",
-                  "alt": "Robber fly perched on a stem",
+                  "alt": "Robber fly perched on a metal wire",
                   "caption": "Robber Fly",
                   "species": "Asilidae family (Robber Fly)",
                   "location": "Georgia",
-                  "description": "A predatory robber fly waiting to ambush prey from its perch."
+                  "description": "A golden robber fly perched on a metal wire, waiting to ambush passing prey."
                 }
               ]
             },
@@ -153,11 +153,11 @@
               "photos": [
                 {
                   "src": "photos/macro/bugs/moths/webworm-moth.webp",
-                  "alt": "Webworm moth resting on a surface",
-                  "caption": "Webworm Moth",
-                  "species": "Hyphantria cunea (Fall Webworm Moth)",
+                  "alt": "Ailanthus webworm moth on a painted surface",
+                  "caption": "Ailanthus Webworm Moth",
+                  "species": "Atteva aurea (Ailanthus Webworm Moth)",
                   "location": "Georgia",
-                  "description": "A white webworm moth with its delicate wings spread flat."
+                  "description": "An ailanthus webworm moth resting on a painted surface, displaying its distinctive orange and white spotted wing pattern."
                 }
               ]
             },
@@ -183,16 +183,98 @@
               "photos": [
                 {
                   "src": "photos/macro/bugs/wasps/paper-wasp.webp",
-                  "alt": "Paper wasp on its nest",
+                  "alt": "Paper wasp perched on a twig",
                   "caption": "Paper Wasp",
                   "species": "Polistes sp. (Paper Wasp)",
                   "location": "Georgia",
-                  "description": "A paper wasp tending to its nest, showing its slender body and folded wings."
+                  "description": "A paper wasp clinging to a thin twig, showing its slender body, folded wings, and reddish-orange coloring."
+                }
+              ]
+            },
+            {
+              "name": "Worms",
+              "slug": "worms",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/bugs/worms/asian-jumping-worm.webp",
+                  "alt": "Asian jumping worm on bare soil",
+                  "caption": "Asian Jumping Worm",
+                  "species": "Amynthas agrestis (Asian Jumping Worm)",
+                  "location": "Georgia",
+                  "description": "An Asian jumping worm on dry, bare soil, showing its dark, glossy body characteristic of this invasive species."
                 }
               ]
             }
           ],
           "photos": []
+        },
+        {
+          "name": "Animals",
+          "slug": "animals",
+          "categories": [
+            {
+              "name": "Turtles",
+              "slug": "turtles",
+              "categories": [],
+              "photos": [
+                {
+                  "src": "photos/macro/animals/turtles/eastern-painted-turtle.webp",
+                  "alt": "Eastern painted turtle partially submerged in shallow water",
+                  "caption": "Eastern Painted Turtle",
+                  "species": "Chrysemys picta picta (Eastern Painted Turtle)",
+                  "location": "Georgia",
+                  "description": "An eastern painted turtle resting in shallow water, showing its dark carapace with yellow-green striping on the head and limbs."
+                }
+              ]
+            }
+          ],
+          "photos": []
+        },
+        {
+          "name": "Insects",
+          "slug": "insects",
+          "categories": [],
+          "photos": []
+        },
+        {
+          "name": "Plants",
+          "slug": "plants",
+          "categories": [],
+          "photos": [
+            {
+              "src": "photos/macro/plants/emerging-mayapple.webp",
+              "alt": "Mayapple emerging from forest floor leaf litter",
+              "caption": "Emerging Mayapple",
+              "species": "Podophyllum peltatum (Mayapple)",
+              "location": "Georgia",
+              "description": "A mayapple pushing through the forest floor in early spring, its umbrella-like leaves still tightly furled around pale stems."
+            },
+            {
+              "src": "photos/macro/plants/immature-sweetgum-fruit.webp",
+              "alt": "Immature green sweetgum fruit on a wooden surface",
+              "caption": "Immature Sweetgum Fruit",
+              "species": "Liquidambar styraciflua (Sweetgum)",
+              "location": "Georgia",
+              "description": "A small, green, developing sweetgum fruit (gumball) with its spiky protrusions just beginning to form."
+            },
+            {
+              "src": "photos/macro/plants/mature-sweetgum.webp",
+              "alt": "Mature dried sweetgum fruit close-up",
+              "caption": "Mature Sweetgum Fruit",
+              "species": "Liquidambar styraciflua (Sweetgum)",
+              "location": "Georgia",
+              "description": "Close-up of a mature, dried sweetgum ball showing its woody, open seed capsules after dispersal."
+            },
+            {
+              "src": "photos/macro/plants/oak-catkins.webp",
+              "alt": "Fallen oak catkins and pollen on a wooden surface",
+              "caption": "Oak Catkins",
+              "species": "Quercus sp. (Oak)",
+              "location": "Georgia",
+              "description": "A pile of spent oak catkins and pollen shed onto a wooden surface during spring bloom."
+            }
+          ]
         }
       ],
       "photos": []
