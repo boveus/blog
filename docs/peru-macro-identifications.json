@@ -1,0 +1,91 @@
+{
+  "method": "Visual identifications from the original photographs, checked against taxonomic references. These are provisional photo-based identifications, not expert-confirmed species records. Country only is recorded because precise capture locations were not supplied. References support taxonomy and comparisons, not confirmation of these individual photographs.",
+  "references": [
+    {
+      "taxon": "Xylocopa",
+      "url": "https://www.inaturalist.org/taxa/51111-Xylocopa"
+    },
+    {
+      "taxon": "Tipuloidea",
+      "url": "https://repository.naturalis.nl/pub/801060/Petersen-2025-Crane-fly-A.pdf"
+    },
+    {
+      "taxon": "Miridae",
+      "url": "https://www.plantbiosecuritydiagnostics.net.au/app/uploads/2020/07/Aust-Miridae-manual.pdf"
+    },
+    {
+      "taxon": "Polistes erythrocephalus, comparison only",
+      "url": "https://entomotropica.org/index.php/bev/article/viewFile/350/351"
+    },
+    {
+      "taxon": "Polistes occurrence in Peru",
+      "url": "https://www.minam.gob.pe/diversidadbiologica/wp-content/uploads/sites/21/2014/02/especies_biotec_bioseg.pdf"
+    },
+    {
+      "taxon": "Elytrosphaera, beetle comparison only; not assigned",
+      "url": "https://link.springer.com/article/10.1007/s13744-026-01434-2"
+    }
+  ],
+  "photographs": [
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_4383.jpg",
+      "species": "Lepidoptera order (Moth; species undetermined)",
+      "note": "Order only; the visible wing pattern and angle do not establish a family or species."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_4385.jpg",
+      "species": "Lepidoptera order (Moth; species undetermined)",
+      "note": "Order only; appears consistent with the moth in IMG_4383, but species is unresolved."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_4404.jpg",
+      "species": "Tipuloidea superfamily (Crane Fly; species undetermined)",
+      "note": "Superfamily-level visual identification; family and species require diagnostic wing and body details."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_4413.jpg",
+      "species": "Tipuloidea superfamily (Crane Fly; species undetermined)",
+      "note": "Superfamily-level visual identification; insufficient detail for a reliable species determination."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_4424.jpg",
+      "species": "Tipuloidea superfamily (Crane Fly; species undetermined)",
+      "note": "Provisional superfamily identification; finer taxonomic placement is unresolved."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_4431.jpg",
+      "species": "Miridae family (Plant Bug; tentative)",
+      "note": "Tentative family identification based on the body outline and forewing pattern; species undetermined."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_4435.jpg",
+      "species": "Diptera order (Fly; species undetermined)",
+      "note": "Order only; silk, shadow, and viewing angle obscure diagnostic features."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_6989.jpg",
+      "species": "Coleoptera order (Beetle; species undetermined)",
+      "note": "Order only. Leaf beetles are a possible comparison, but the image does not justify a confident family or species assignment."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_7463.jpg",
+      "species": "Xylocopa sp. (Carpenter Bee; tentative)",
+      "note": "Tentative genus identification; the distant silhouette is consistent with the closer bee in IMG_7467, but species is undetermined."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_7467.jpg",
+      "species": "Xylocopa sp. (Carpenter Bee)",
+      "note": "Genus-level visual identification; no species-level determination from this view."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_7471.jpg",
+      "species": "Polistes sp. (Paper Wasp)",
+      "note": "Polistes is the working genus identification. Polistes erythrocephalus is a possible species, consistent with the red head and dark body, but not confirmed."
+    },
+    {
+      "file": "keeper_not_book/10_macro_shots/IMG_7475.jpg",
+      "species": "Polistes sp. (Paper Wasp)",
+      "note": "Polistes is the working genus identification. Polistes erythrocephalus is a possible species, but coloration alone does not confirm it."
+    }
+  ]
+}

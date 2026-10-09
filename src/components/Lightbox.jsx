@@ -8,9 +8,15 @@ function Lightbox({ photos, currentIndex, onClose, onNext, onPrev }) {
   const photo = photos[currentIndex]
 
   const handleKey = useCallback((e) => {
+    if (e.key === 'Tab') {
+      const buttons = [...overlayRef.current.querySelectorAll('button')]
+      const first = buttons[0], last = buttons.at(-1)
+      if (e.shiftKey && (document.activeElement === first || document.activeElement === overlayRef.current)) { e.preventDefault(); last.focus() }
+      else if (!e.shiftKey && (document.activeElement === last || document.activeElement === overlayRef.current)) { e.preventDefault(); first.focus() }
+    }
     if (e.key === 'Escape') onClose()
-    else if (e.key === 'ArrowRight') onNext()
-    else if (e.key === 'ArrowLeft') onPrev()
+    else if (e.key === 'ArrowRight' && onNext) onNext()
+    else if (e.key === 'ArrowLeft' && onPrev) onPrev()
   }, [onClose, onNext, onPrev])
 
   useEffect(() => {
@@ -34,8 +40,8 @@ function Lightbox({ photos, currentIndex, onClose, onNext, onPrev }) {
     if (touchStart.current === null) return
     const delta = e.changedTouches[0].clientX - touchStart.current
     if (Math.abs(delta) > 50) {
-      if (delta < 0) onNext()
-      else onPrev()
+      if (delta < 0) onNext?.()
+      else onPrev?.()
     }
     touchStart.current = null
   }, [onNext, onPrev])
@@ -110,6 +116,7 @@ function Lightbox({ photos, currentIndex, onClose, onNext, onPrev }) {
           {photo.species && <div className="lightbox-species">{photo.species}</div>}
           {photo.description && <div className="lightbox-description">{photo.description}</div>}
           {photo.location && <div className="lightbox-location">{photo.location}</div>}
+          {photo.identificationNote && <div className="lightbox-identification">{photo.identificationNote}</div>}
         </div>
       )}
     </div>

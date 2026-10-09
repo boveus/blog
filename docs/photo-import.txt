@@ -1,0 +1,26 @@
+Peru photography import
+
+Run npm run import:peru -- /absolute/path/to/peru_final from the repository root.
+
+The importer reads JPEGs directly inside the ten chapter folders and the
+keeper_not_book/10_macro_shots folder. It excludes _Rejected directories,
+RAW files, and sidecars. Macro trip photographs join the Macro collection;
+the remaining keeper_not_book photographs appear under Miscellaneous in Peru.
+
+Web copies: 2400-pixel maximum dimension, WebP quality 84.
+Thumbnails: 800-pixel maximum dimension, WebP quality 78.
+Originals are never modified. Camera orientation is applied, followed by the
+21 visually checked corrections in scripts/peru-orientation.json. Web copies
+do not retain EXIF metadata. No exposure or color edits were applied.
+
+library.json retains the original nested category model. Existing captions,
+species, descriptions, and identification notes survive re-imports by matching
+the generated photo path. The importer replaces the Peru category, so files
+removed from the source selection are removed from its manifest on re-import.
+Unused old generated assets are not automatically deleted.
+
+Identification notes and comparison references for the 12 trip macro photos
+are in docs/peru-macro-identifications.json. Several photos support only an
+order, superfamily, family, or genus identification; none is presented as a
+confirmed exact species. Locations are recorded as Peru, without guessing a
+specific town or trail.

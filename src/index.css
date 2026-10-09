@@ -2,10 +2,10 @@
   --text: #3a3a3a;
   --text-light: #6b6b6b;
   --text-heading: #1a1a1a;
-  --bg: #fafaf9;
+  --bg: #f5f3ee;
   --bg-surface: #ffffff;
   --border: #e5e5e3;
-  --accent: #2c5f2d;
+  --accent: #455846;
   --accent-light: #4a8b4c;
   --sans: 'Inter', system-ui, -apple-system, sans-serif;
   --serif: 'Source Serif 4', Georgia, serif;
@@ -16,19 +16,6 @@
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #c8c8c8;
-    --text-light: #999;
-    --text-heading: #e8e8e8;
-    --bg: #1a1a1a;
-    --bg-surface: #222;
-    --border: #333;
-    --accent: #6ab06c;
-    --accent-light: #8cd08e;
-  }
 }
 
 * {

@@ -19,7 +19,9 @@
                   "caption": "Carpenter Ants",
                   "species": "Camponotus sp. (Carpenter Ant)",
                   "location": "Georgia",
-                  "description": "Carpenter ant workers and winged alates (reproductives) gathered along a surface edge during a nuptial flight emergence."
+                  "description": "Carpenter ant workers and winged alates (reproductives) gathered along a surface edge during a nuptial flight emergence.",
+                  "width": 2400,
+                  "height": 1600
                 },
                 {
                   "src": "photos/macro/bugs/ants/carpenter-ants2.webp",
@@ -27,7 +29,9 @@
                   "caption": "Carpenter Ants",
                   "species": "Camponotus sp. (Carpenter Ant)",
                   "location": "Georgia",
-                  "description": "Carpenter ant workers alongside winged alates emerging from a colony near a wooden edge."
+                  "description": "Carpenter ant workers alongside winged alates emerging from a colony near a wooden edge.",
+                  "width": 2400,
+                  "height": 1600
                 },
                 {
                   "src": "photos/macro/bugs/ants/carpenter-ants3.webp",
@@ -35,7 +39,9 @@
                   "caption": "Carpenter Ants",
                   "species": "Camponotus sp. (Carpenter Ant)",
                   "location": "Georgia",
-                  "description": "Winged carpenter ant reproductives congregating on a surface during a nuptial flight event."
+                  "description": "Winged carpenter ant reproductives congregating on a surface during a nuptial flight event.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             },
@@ -50,7 +56,9 @@
                   "caption": "Eastern Carpenter Bee",
                   "species": "Xylocopa virginica (Eastern Carpenter Bee)",
                   "location": "Georgia",
-                  "description": "An eastern carpenter bee foraging on an orange coreopsis bloom, showing its fuzzy yellow thorax and robust body."
+                  "description": "An eastern carpenter bee foraging on an orange coreopsis bloom, showing its fuzzy yellow thorax and robust body.",
+                  "width": 4956,
+                  "height": 4000
                 },
                 {
                   "src": "photos/macro/bugs/bees/bee_2.webp",
@@ -58,7 +66,9 @@
                   "caption": "Honeybee",
                   "species": "Apis mellifera (Western Honeybee)",
                   "location": "Georgia",
-                  "description": "A honeybee collecting pollen from a purple aster flower."
+                  "description": "A honeybee collecting pollen from a purple aster flower.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             },
@@ -73,7 +83,9 @@
                   "caption": "Longhorn Beetle",
                   "species": "Cerambycidae family (Longhorn Beetle)",
                   "location": "Georgia",
-                  "description": "A longhorn beetle resting on a painted metal surface, displaying its long antennae and reddish-orange legs."
+                  "description": "A longhorn beetle resting on a painted metal surface, displaying its long antennae and reddish-orange legs.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             },
@@ -88,7 +100,9 @@
                   "caption": "Skipper Butterfly",
                   "species": "Hesperiidae family (Skipper)",
                   "location": "Georgia",
-                  "description": "A skipper butterfly nectaring on an orange marigold with its wings spread open."
+                  "description": "A skipper butterfly nectaring on an orange marigold with its wings spread open.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             },
@@ -103,7 +117,9 @@
                   "caption": "Robber Fly",
                   "species": "Asilidae family (Robber Fly)",
                   "location": "Georgia",
-                  "description": "A golden robber fly perched on a metal wire, waiting to ambush passing prey."
+                  "description": "A golden robber fly perched on a metal wire, waiting to ambush passing prey.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             },
@@ -118,7 +134,9 @@
                   "caption": "Joro Spider",
                   "species": "Trichonephila clavata (Joro Spider)",
                   "location": "Georgia",
-                  "description": "A female Joro spider displayed in her golden orb web."
+                  "description": "A female Joro spider displayed in her golden orb web.",
+                  "width": 3066,
+                  "height": 2044
                 },
                 {
                   "src": "photos/macro/bugs/joro-spiders/joro_2.webp",
@@ -126,7 +144,9 @@
                   "caption": "Joro Spider",
                   "species": "Trichonephila clavata (Joro Spider)",
                   "location": "Georgia",
-                  "description": "Detailed macro view of a Joro spider's vibrant coloring and patterns."
+                  "description": "Detailed macro view of a Joro spider's vibrant coloring and patterns.",
+                  "width": 2837,
+                  "height": 1891
                 },
                 {
                   "src": "photos/macro/bugs/joro-spiders/joro_3.webp",
@@ -134,7 +154,9 @@
                   "caption": "Joro Spider",
                   "species": "Trichonephila clavata (Joro Spider)",
                   "location": "Georgia",
-                  "description": "A Joro spider suspended in the center of its web against a blurred background."
+                  "description": "A Joro spider suspended in the center of its web against a blurred background.",
+                  "width": 2613,
+                  "height": 1742
                 },
                 {
                   "src": "photos/macro/bugs/joro-spiders/joro_4.webp",
@@ -142,7 +164,9 @@
                   "caption": "Joro Spider",
                   "species": "Trichonephila clavata (Joro Spider)",
                   "location": "Georgia",
-                  "description": "Underside view of a Joro spider highlighting its leg markings."
+                  "description": "Underside view of a Joro spider highlighting its leg markings.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             },
@@ -157,7 +181,9 @@
                   "caption": "Ailanthus Webworm Moth",
                   "species": "Atteva aurea (Ailanthus Webworm Moth)",
                   "location": "Georgia",
-                  "description": "An ailanthus webworm moth resting on a painted surface, displaying its distinctive orange and white spotted wing pattern."
+                  "description": "An ailanthus webworm moth resting on a painted surface, displaying its distinctive orange and white spotted wing pattern.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             },
@@ -172,7 +198,9 @@
                   "caption": "Orb Weaver",
                   "species": "Araneidae family (Orb Weaver)",
                   "location": "Georgia",
-                  "description": "An orb weaver spider sitting at the center of its intricately woven web."
+                  "description": "An orb weaver spider sitting at the center of its intricately woven web.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             },
@@ -187,7 +215,9 @@
                   "caption": "Paper Wasp",
                   "species": "Polistes sp. (Paper Wasp)",
                   "location": "Georgia",
-                  "description": "A paper wasp clinging to a thin twig, showing its slender body, folded wings, and reddish-orange coloring."
+                  "description": "A paper wasp clinging to a thin twig, showing its slender body, folded wings, and reddish-orange coloring.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             },
@@ -202,7 +232,9 @@
                   "caption": "Asian Jumping Worm",
                   "species": "Amynthas agrestis (Asian Jumping Worm)",
                   "location": "Georgia",
-                  "description": "An Asian jumping worm on dry, bare soil, showing its dark, glossy body characteristic of this invasive species."
+                  "description": "An Asian jumping worm on dry, bare soil, showing its dark, glossy body characteristic of this invasive species.",
+                  "width": 2400,
+                  "height": 1600
                 }
               ]
             }
@@ -224,7 +256,9 @@
                   "caption": "Eastern Painted Turtle",
                   "species": "Chrysemys picta picta (Eastern Painted Turtle)",
                   "location": "Georgia",
-                  "description": "An eastern painted turtle resting in shallow water, showing its dark carapace with yellow-green striping on the head and limbs."
+                  "description": "An eastern painted turtle resting in shallow water, showing its dark carapace with yellow-green striping on the head and limbs.",
+                  "width": 6048,
+                  "height": 4020
                 }
               ]
             }
@@ -248,7 +282,9 @@
               "caption": "Emerging Mayapple",
               "species": "Podophyllum peltatum (Mayapple)",
               "location": "Georgia",
-              "description": "A mayapple pushing through the forest floor in early spring, its umbrella-like leaves still tightly furled around pale stems."
+              "description": "A mayapple pushing through the forest floor in early spring, its umbrella-like leaves still tightly furled around pale stems.",
+              "width": 2400,
+              "height": 1600
             },
             {
               "src": "photos/macro/plants/immature-sweetgum-fruit.webp",
@@ -256,7 +292,9 @@
               "caption": "Immature Sweetgum Fruit",
               "species": "Liquidambar styraciflua (Sweetgum)",
               "location": "Georgia",
-              "description": "A small, green, developing sweetgum fruit (gumball) with its spiky protrusions just beginning to form."
+              "description": "A small, green, developing sweetgum fruit (gumball) with its spiky protrusions just beginning to form.",
+              "width": 2400,
+              "height": 1600
             },
             {
               "src": "photos/macro/plants/mature-sweetgum.webp",
@@ -264,7 +302,9 @@
               "caption": "Mature Sweetgum Fruit",
               "species": "Liquidambar styraciflua (Sweetgum)",
               "location": "Georgia",
-              "description": "Close-up of a mature, dried sweetgum ball showing its woody, open seed capsules after dispersal."
+              "description": "Close-up of a mature, dried sweetgum ball showing its woody, open seed capsules after dispersal.",
+              "width": 2400,
+              "height": 1600
             },
             {
               "src": "photos/macro/plants/oak-catkins.webp",
@@ -272,7 +312,172 @@
               "caption": "Oak Catkins",
               "species": "Quercus sp. (Oak)",
               "location": "Georgia",
-              "description": "A pile of spent oak catkins and pollen shed onto a wooden surface during spring bloom."
+              "description": "A pile of spent oak catkins and pollen shed onto a wooden surface during spring bloom.",
+              "width": 6048,
+              "height": 4020
+            }
+          ]
+        },
+        {
+          "name": "Peru macro",
+          "slug": "peru-macro",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "Moth with a white hairy thorax and golden-brown wings on a black surface",
+              "caption": "White-haired Moth",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_4383.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_4383.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_4383.jpg",
+              "species": "Lepidoptera order (Moth; species undetermined)",
+              "description": "A moth resting on a dark textured surface, with a dense white collar of hairs and folded golden-brown wings.",
+              "identificationNote": "Order only; the visible wing pattern and angle do not establish a family or species."
+            },
+            {
+              "alt": "Side view of a white-haired moth on a dark textured surface",
+              "caption": "White-haired Moth — Side View",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_4385.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_4385.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_4385.jpg",
+              "species": "Lepidoptera order (Moth; species undetermined)",
+              "description": "Side view of a white-haired moth, showing the fine texture and venation of its folded brown wings.",
+              "identificationNote": "Order only; appears consistent with the moth in IMG_4383, but species is unresolved."
+            },
+            {
+              "alt": "Long-legged crane fly casting shadows on a pale wall",
+              "caption": "Crane Fly",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_4404.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_4404.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_4404.jpg",
+              "species": "Tipuloidea superfamily (Crane Fly; species undetermined)",
+              "description": "A long-legged crane fly resting on a pale wall, its slender legs casting sharply defined shadows.",
+              "identificationNote": "Superfamily-level visual identification; family and species require diagnostic wing and body details."
+            },
+            {
+              "alt": "Close view of a crane fly with patterned wings and long legs",
+              "caption": "Crane Fly — Wing Detail",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_4413.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_4413.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_4413.jpg",
+              "species": "Tipuloidea superfamily (Crane Fly; species undetermined)",
+              "description": "A closer view of a crane fly showing patterned wings, an elongated head, and exceptionally long legs.",
+              "identificationNote": "Superfamily-level visual identification; insufficient detail for a reliable species determination."
+            },
+            {
+              "alt": "Crane fly resting above a crack in a pale wall",
+              "caption": "Crane Fly on a Wall",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_4424.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_4424.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_4424.jpg",
+              "species": "Tipuloidea superfamily (Crane Fly; species undetermined)",
+              "description": "A slender crane fly on a cracked wall, with translucent wings held apart from its body.",
+              "identificationNote": "Provisional superfamily identification; finer taxonomic placement is unresolved."
+            },
+            {
+              "alt": "Dark mottled plant bug with long antennae on a pale wall",
+              "caption": "Plant Bug",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_4431.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_4431.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_4431.jpg",
+              "species": "Miridae family (Plant Bug; tentative)",
+              "description": "A dark, mottled true bug on a pale wall, with long antennae and contrasting markings on its folded wings.",
+              "identificationNote": "Tentative family identification based on the body outline and forewing pattern; species undetermined."
+            },
+            {
+              "alt": "Dark fly entangled in spider silk on an orange brick wall",
+              "caption": "Fly in Spider Silk",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_4435.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_4435.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_4435.jpg",
+              "species": "Diptera order (Fly; species undetermined)",
+              "description": "A dark fly caught among strands of spider silk against orange brickwork.",
+              "identificationNote": "Order only; silk, shadow, and viewing angle obscure diagnostic features."
+            },
+            {
+              "alt": "Rounded orange-and-black beetle on black grid-patterned fabric",
+              "caption": "Orange-and-black Beetle",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_6989.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_6989.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_6989.jpg",
+              "species": "Coleoptera order (Beetle; species undetermined)",
+              "description": "A rounded orange-and-black beetle resting on woven backpack fabric beside a water bottle.",
+              "identificationNote": "Order only. Leaf beetles are a possible comparison, but the image does not justify a confident family or species assignment."
+            },
+            {
+              "alt": "Dark bee approaching pink flowers against a mountainous background",
+              "caption": "Carpenter Bee in Flight",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_7463.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_7463.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_7463.jpg",
+              "species": "Xylocopa sp. (Carpenter Bee; tentative)",
+              "description": "A large dark bee approaching pink and yellow flowers with mountains in the background.",
+              "identificationNote": "Tentative genus identification; the distant silhouette is consistent with the closer bee in IMG_7467, but species is undetermined."
+            },
+            {
+              "alt": "Black carpenter bee with iridescent wings on pink and yellow flowers",
+              "caption": "Carpenter Bee on Flowers",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_7467.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_7467.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_7467.jpg",
+              "species": "Xylocopa sp. (Carpenter Bee)",
+              "description": "A glossy black carpenter bee visiting pink and yellow flowers, its wings reflecting blue-green tones.",
+              "identificationNote": "Genus-level visual identification; no species-level determination from this view."
+            },
+            {
+              "alt": "Red-headed paper wasp on pink and yellow flowers",
+              "caption": "Red-headed Paper Wasp",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_7471.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_7471.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_7471.jpg",
+              "species": "Polistes sp. (Paper Wasp)",
+              "description": "A paper wasp on a flower cluster, showing a rust-red head, a dark abdomen, and folded violet-tinted wings.",
+              "identificationNote": "Polistes is the working genus identification. Polistes erythrocephalus is a possible species, consistent with the red head and dark body, but not confirmed."
+            },
+            {
+              "alt": "Side view of a red-headed paper wasp with dark folded wings on flowers",
+              "caption": "Red-headed Paper Wasp — Close-up",
+              "location": "Peru",
+              "src": "photos/macro/peru-macro/img_7475.webp",
+              "thumbnail": "thumbnails/photos/macro/peru-macro/img_7475.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/10_macro_shots/IMG_7475.jpg",
+              "species": "Polistes sp. (Paper Wasp)",
+              "description": "Close side view of a paper wasp on flowers, showing its red head, narrow waist, and long folded wings.",
+              "identificationNote": "Polistes is the working genus identification. Polistes erythrocephalus is a possible species, but coloration alone does not confirm it."
             }
           ]
         }
@@ -289,6 +494,1633 @@
       "name": "Wildlife",
       "slug": "wildlife",
       "categories": [],
+      "photos": []
+    },
+    {
+      "name": "Peru",
+      "slug": "peru",
+      "categories": [
+        {
+          "name": "The approach",
+          "slug": "approach",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "The approach, Peru — photograph 1",
+              "caption": "The approach · 01",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3372.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3372.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3372.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 2",
+              "caption": "The approach · 02",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3432.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3432.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3432.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 3",
+              "caption": "The approach · 03",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3590.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3590.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3590.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 4",
+              "caption": "The approach · 04",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3620.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3620.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "1_approach/IMG_3620.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 5",
+              "caption": "The approach · 05",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3677.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3677.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3677.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 6",
+              "caption": "The approach · 06",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3687.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3687.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3687.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 7",
+              "caption": "The approach · 07",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3690.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3690.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3690.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 8",
+              "caption": "The approach · 08",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3753.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3753.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3753.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 9",
+              "caption": "The approach · 09",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3874.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3874.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3874.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 10",
+              "caption": "The approach · 10",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3889.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3889.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3889.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 11",
+              "caption": "The approach · 11",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3978.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3978.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3978.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 12",
+              "caption": "The approach · 12",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_3998.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_3998.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_3998.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 13",
+              "caption": "The approach · 13",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_4079.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_4079.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "1_approach/IMG_4079.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 14",
+              "caption": "The approach · 14",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_4106.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_4106.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_4106.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 15",
+              "caption": "The approach · 15",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_4151.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_4151.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_4151.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 16",
+              "caption": "The approach · 16",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_4163.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_4163.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_4163.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 17",
+              "caption": "The approach · 17",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_4197.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_4197.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_4197.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 18",
+              "caption": "The approach · 18",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_4219.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_4219.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_4219.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 19",
+              "caption": "The approach · 19",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_4338.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_4338.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_4338.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 20",
+              "caption": "The approach · 20",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_4354.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_4354.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "1_approach/IMG_4354.jpg"
+            },
+            {
+              "alt": "The approach, Peru — photograph 21",
+              "caption": "The approach · 21",
+              "location": "Peru",
+              "src": "photos/peru/approach/img_4367.webp",
+              "thumbnail": "thumbnails/photos/peru/approach/img_4367.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "1_approach/IMG_4367.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Into the mountains",
+          "slug": "into-mountains",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "Into the mountains, Peru — photograph 1",
+              "caption": "Into the mountains · 01",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4499.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4499.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4499.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 2",
+              "caption": "Into the mountains · 02",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4551.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4551.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4551.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 3",
+              "caption": "Into the mountains · 03",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4595.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4595.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4595.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 4",
+              "caption": "Into the mountains · 04",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4669.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4669.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4669.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 5",
+              "caption": "Into the mountains · 05",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4671.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4671.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "2_into_mountains/IMG_4671.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 6",
+              "caption": "Into the mountains · 06",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4705.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4705.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4705.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 7",
+              "caption": "Into the mountains · 07",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4738.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4738.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4738.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 8",
+              "caption": "Into the mountains · 08",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4821.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4821.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4821.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 9",
+              "caption": "Into the mountains · 09",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4839.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4839.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "2_into_mountains/IMG_4839.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 10",
+              "caption": "Into the mountains · 10",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4869.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4869.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4869.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 11",
+              "caption": "Into the mountains · 11",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4897.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4897.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4897.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 12",
+              "caption": "Into the mountains · 12",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4974.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4974.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4974.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 13",
+              "caption": "Into the mountains · 13",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_4998.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_4998.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_4998.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 14",
+              "caption": "Into the mountains · 14",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_5025.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_5025.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_5025.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 15",
+              "caption": "Into the mountains · 15",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_5089.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_5089.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_5089.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 16",
+              "caption": "Into the mountains · 16",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_5202.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_5202.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_5202.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 17",
+              "caption": "Into the mountains · 17",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_5288.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_5288.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_5288.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 18",
+              "caption": "Into the mountains · 18",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_5330.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_5330.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_5330.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 19",
+              "caption": "Into the mountains · 19",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_5353.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_5353.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_5353.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 20",
+              "caption": "Into the mountains · 20",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_5377.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_5377.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "2_into_mountains/IMG_5377.jpg"
+            },
+            {
+              "alt": "Into the mountains, Peru — photograph 21",
+              "caption": "Into the mountains · 21",
+              "location": "Peru",
+              "src": "photos/peru/into-mountains/img_5390.webp",
+              "thumbnail": "thumbnails/photos/peru/into-mountains/img_5390.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "2_into_mountains/IMG_5390.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Lake Lazuna",
+          "slug": "lake-lazuna",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "Lake Lazuna, Peru — photograph 1",
+              "caption": "Lake Lazuna · 01",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5486.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5486.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5486.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 2",
+              "caption": "Lake Lazuna · 02",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5564.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5564.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5564.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 3",
+              "caption": "Lake Lazuna · 03",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5614.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5614.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5614.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 4",
+              "caption": "Lake Lazuna · 04",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5618.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5618.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "3_lake_lazuna/IMG_5618.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 5",
+              "caption": "Lake Lazuna · 05",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5636.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5636.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5636.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 6",
+              "caption": "Lake Lazuna · 06",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5701.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5701.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5701.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 7",
+              "caption": "Lake Lazuna · 07",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5722.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5722.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5722.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 8",
+              "caption": "Lake Lazuna · 08",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5831.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5831.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5831.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 9",
+              "caption": "Lake Lazuna · 09",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5851.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5851.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5851.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 10",
+              "caption": "Lake Lazuna · 10",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5878.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5878.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "3_lake_lazuna/IMG_5878.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 11",
+              "caption": "Lake Lazuna · 11",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5911.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5911.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5911.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 12",
+              "caption": "Lake Lazuna · 12",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5943.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5943.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5943.jpg"
+            },
+            {
+              "alt": "Lake Lazuna, Peru — photograph 13",
+              "caption": "Lake Lazuna · 13",
+              "location": "Peru",
+              "src": "photos/peru/lake-lazuna/img_5956.webp",
+              "thumbnail": "thumbnails/photos/peru/lake-lazuna/img_5956.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "3_lake_lazuna/IMG_5956.jpg"
+            }
+          ]
+        },
+        {
+          "name": "High passes",
+          "slug": "high-passes",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "High passes, Peru — photograph 1",
+              "caption": "High passes · 01",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6145.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6145.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6145.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 2",
+              "caption": "High passes · 02",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6334.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6334.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6334.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 3",
+              "caption": "High passes · 03",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6373.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6373.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6373.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 4",
+              "caption": "High passes · 04",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6375.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6375.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6375.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 5",
+              "caption": "High passes · 05",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6454.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6454.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6454.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 6",
+              "caption": "High passes · 06",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6496.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6496.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6496.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 7",
+              "caption": "High passes · 07",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6504.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6504.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6504.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 8",
+              "caption": "High passes · 08",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6525.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6525.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6525.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 9",
+              "caption": "High passes · 09",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6535.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6535.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6535.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 10",
+              "caption": "High passes · 10",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6557.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6557.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6557.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 11",
+              "caption": "High passes · 11",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6583.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6583.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6583.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 12",
+              "caption": "High passes · 12",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6605.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6605.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6605.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 13",
+              "caption": "High passes · 13",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6634.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6634.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6634.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 14",
+              "caption": "High passes · 14",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6639.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6639.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6639.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 15",
+              "caption": "High passes · 15",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6648.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6648.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6648.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 16",
+              "caption": "High passes · 16",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6651.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6651.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6651.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 17",
+              "caption": "High passes · 17",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6658.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6658.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6658.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 18",
+              "caption": "High passes · 18",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6672.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6672.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6672.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 19",
+              "caption": "High passes · 19",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6694.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6694.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6694.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 20",
+              "caption": "High passes · 20",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6783.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6783.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6783.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 21",
+              "caption": "High passes · 21",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6855.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6855.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6855.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 22",
+              "caption": "High passes · 22",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6892.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6892.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6892.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 23",
+              "caption": "High passes · 23",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6922.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6922.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6922.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 24",
+              "caption": "High passes · 24",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6961.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6961.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6961.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 25",
+              "caption": "High passes · 25",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6966.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6966.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6966.jpg"
+            },
+            {
+              "alt": "High passes, Peru — photograph 26",
+              "caption": "High passes · 26",
+              "location": "Peru",
+              "src": "photos/peru/high-passes/img_6974.webp",
+              "thumbnail": "thumbnails/photos/peru/high-passes/img_6974.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "4_high_passes/IMG_6974.jpg"
+            }
+          ]
+        },
+        {
+          "name": "The descent",
+          "slug": "descent",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "The descent, Peru — photograph 1",
+              "caption": "The descent · 01",
+              "location": "Peru",
+              "src": "photos/peru/descent/img_7012.webp",
+              "thumbnail": "thumbnails/photos/peru/descent/img_7012.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "5_descent/IMG_7012.jpg"
+            },
+            {
+              "alt": "The descent, Peru — photograph 2",
+              "caption": "The descent · 02",
+              "location": "Peru",
+              "src": "photos/peru/descent/img_7074.webp",
+              "thumbnail": "thumbnails/photos/peru/descent/img_7074.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "5_descent/IMG_7074.jpg"
+            },
+            {
+              "alt": "The descent, Peru — photograph 3",
+              "caption": "The descent · 03",
+              "location": "Peru",
+              "src": "photos/peru/descent/img_7143.webp",
+              "thumbnail": "thumbnails/photos/peru/descent/img_7143.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "5_descent/IMG_7143.jpg"
+            },
+            {
+              "alt": "The descent, Peru — photograph 4",
+              "caption": "The descent · 04",
+              "location": "Peru",
+              "src": "photos/peru/descent/img_7196.webp",
+              "thumbnail": "thumbnails/photos/peru/descent/img_7196.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "5_descent/IMG_7196.jpg"
+            },
+            {
+              "alt": "The descent, Peru — photograph 5",
+              "caption": "The descent · 05",
+              "location": "Peru",
+              "src": "photos/peru/descent/img_7218.webp",
+              "thumbnail": "thumbnails/photos/peru/descent/img_7218.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "5_descent/IMG_7218.jpg"
+            },
+            {
+              "alt": "The descent, Peru — photograph 6",
+              "caption": "The descent · 06",
+              "location": "Peru",
+              "src": "photos/peru/descent/img_7277.webp",
+              "thumbnail": "thumbnails/photos/peru/descent/img_7277.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "5_descent/IMG_7277.jpg"
+            },
+            {
+              "alt": "The descent, Peru — photograph 7",
+              "caption": "The descent · 07",
+              "location": "Peru",
+              "src": "photos/peru/descent/img_7284.webp",
+              "thumbnail": "thumbnails/photos/peru/descent/img_7284.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "5_descent/IMG_7284.jpg"
+            },
+            {
+              "alt": "The descent, Peru — photograph 8",
+              "caption": "The descent · 08",
+              "location": "Peru",
+              "src": "photos/peru/descent/img_7317.webp",
+              "thumbnail": "thumbnails/photos/peru/descent/img_7317.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "5_descent/IMG_7317.jpg"
+            },
+            {
+              "alt": "The descent, Peru — photograph 9",
+              "caption": "The descent · 09",
+              "location": "Peru",
+              "src": "photos/peru/descent/img_7321.webp",
+              "thumbnail": "thumbnails/photos/peru/descent/img_7321.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "5_descent/IMG_7321.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Aguas Calientes",
+          "slug": "aquas-calientes",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "Aguas Calientes, Peru — photograph 1",
+              "caption": "Aguas Calientes · 01",
+              "location": "Peru",
+              "src": "photos/peru/aquas-calientes/img_7597.webp",
+              "thumbnail": "thumbnails/photos/peru/aquas-calientes/img_7597.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "6_aquas_calientes/IMG_7597.jpg"
+            },
+            {
+              "alt": "Aguas Calientes, Peru — photograph 2",
+              "caption": "Aguas Calientes · 02",
+              "location": "Peru",
+              "src": "photos/peru/aquas-calientes/img_7617.webp",
+              "thumbnail": "thumbnails/photos/peru/aquas-calientes/img_7617.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "6_aquas_calientes/IMG_7617.jpg"
+            },
+            {
+              "alt": "Aguas Calientes, Peru — photograph 3",
+              "caption": "Aguas Calientes · 03",
+              "location": "Peru",
+              "src": "photos/peru/aquas-calientes/img_7623.webp",
+              "thumbnail": "thumbnails/photos/peru/aquas-calientes/img_7623.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "6_aquas_calientes/IMG_7623.jpg"
+            },
+            {
+              "alt": "Aguas Calientes, Peru — photograph 4",
+              "caption": "Aguas Calientes · 04",
+              "location": "Peru",
+              "src": "photos/peru/aquas-calientes/img_7627.webp",
+              "thumbnail": "thumbnails/photos/peru/aquas-calientes/img_7627.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "6_aquas_calientes/IMG_7627.jpg"
+            },
+            {
+              "alt": "Aguas Calientes, Peru — photograph 5",
+              "caption": "Aguas Calientes · 05",
+              "location": "Peru",
+              "src": "photos/peru/aquas-calientes/img_7647.webp",
+              "thumbnail": "thumbnails/photos/peru/aquas-calientes/img_7647.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "6_aquas_calientes/IMG_7647.jpg"
+            },
+            {
+              "alt": "Aguas Calientes, Peru — photograph 6",
+              "caption": "Aguas Calientes · 06",
+              "location": "Peru",
+              "src": "photos/peru/aquas-calientes/img_7660.webp",
+              "thumbnail": "thumbnails/photos/peru/aquas-calientes/img_7660.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "6_aquas_calientes/IMG_7660.jpg"
+            },
+            {
+              "alt": "Aguas Calientes, Peru — photograph 7",
+              "caption": "Aguas Calientes · 07",
+              "location": "Peru",
+              "src": "photos/peru/aquas-calientes/img_7669.webp",
+              "thumbnail": "thumbnails/photos/peru/aquas-calientes/img_7669.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "6_aquas_calientes/IMG_7669.jpg"
+            },
+            {
+              "alt": "Aguas Calientes, Peru — photograph 8",
+              "caption": "Aguas Calientes · 08",
+              "location": "Peru",
+              "src": "photos/peru/aquas-calientes/img_7684.webp",
+              "thumbnail": "thumbnails/photos/peru/aquas-calientes/img_7684.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "6_aquas_calientes/IMG_7684.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Machu Picchu",
+          "slug": "macchu-picchu",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "Machu Picchu, Peru — photograph 1",
+              "caption": "Machu Picchu · 01",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_7975.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_7975.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_7975.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 2",
+              "caption": "Machu Picchu · 02",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8004.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8004.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8004.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 3",
+              "caption": "Machu Picchu · 03",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8344.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8344.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "7_macchu_picchu/IMG_8344.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 4",
+              "caption": "Machu Picchu · 04",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8376.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8376.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8376.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 5",
+              "caption": "Machu Picchu · 05",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8379.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8379.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8379.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 6",
+              "caption": "Machu Picchu · 06",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8402.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8402.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8402.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 7",
+              "caption": "Machu Picchu · 07",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8444.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8444.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8444.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 8",
+              "caption": "Machu Picchu · 08",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8452.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8452.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "7_macchu_picchu/IMG_8452.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 9",
+              "caption": "Machu Picchu · 09",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8487.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8487.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8487.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 10",
+              "caption": "Machu Picchu · 10",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8502.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8502.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "7_macchu_picchu/IMG_8502.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 11",
+              "caption": "Machu Picchu · 11",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8511.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8511.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "7_macchu_picchu/IMG_8511.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 12",
+              "caption": "Machu Picchu · 12",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8538.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8538.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8538.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 13",
+              "caption": "Machu Picchu · 13",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8555.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8555.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8555.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 14",
+              "caption": "Machu Picchu · 14",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8590.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8590.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8590.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 15",
+              "caption": "Machu Picchu · 15",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8608.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8608.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8608.jpg"
+            },
+            {
+              "alt": "Machu Picchu, Peru — photograph 16",
+              "caption": "Machu Picchu · 16",
+              "location": "Peru",
+              "src": "photos/peru/macchu-picchu/img_8637.webp",
+              "thumbnail": "thumbnails/photos/peru/macchu-picchu/img_8637.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "7_macchu_picchu/IMG_8637.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Cusco",
+          "slug": "cusco",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "Cusco, Peru — photograph 1",
+              "caption": "Cusco · 01",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2128.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2128.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2128.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 2",
+              "caption": "Cusco · 02",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2221.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2221.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2221.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 3",
+              "caption": "Cusco · 03",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2355.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2355.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2355.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 4",
+              "caption": "Cusco · 04",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2394.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2394.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2394.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 5",
+              "caption": "Cusco · 05",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2502.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2502.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "8_cusco/IMG_2502.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 6",
+              "caption": "Cusco · 06",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2558.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2558.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2558.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 7",
+              "caption": "Cusco · 07",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2598.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2598.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2598.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 8",
+              "caption": "Cusco · 08",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2618.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2618.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2618.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 9",
+              "caption": "Cusco · 09",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2649.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2649.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2649.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 10",
+              "caption": "Cusco · 10",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2651.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2651.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2651.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 11",
+              "caption": "Cusco · 11",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_2674.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_2674.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "8_cusco/IMG_2674.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 12",
+              "caption": "Cusco · 12",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_3257.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_3257.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "8_cusco/IMG_3257.jpg"
+            },
+            {
+              "alt": "Cusco, Peru — photograph 13",
+              "caption": "Cusco · 13",
+              "location": "Peru",
+              "src": "photos/peru/cusco/img_3280.webp",
+              "thumbnail": "thumbnails/photos/peru/cusco/img_3280.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "8_cusco/IMG_3280.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Palccoyo",
+          "slug": "palccoyo",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "Palccoyo, Peru — photograph 1",
+              "caption": "Palccoyo · 01",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2820.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2820.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2820.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 2",
+              "caption": "Palccoyo · 02",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2832.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2832.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2832.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 3",
+              "caption": "Palccoyo · 03",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2835.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2835.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2835.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 4",
+              "caption": "Palccoyo · 04",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2843.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2843.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2843.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 5",
+              "caption": "Palccoyo · 05",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2851.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2851.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2851.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 6",
+              "caption": "Palccoyo · 06",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2858.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2858.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2858.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 7",
+              "caption": "Palccoyo · 07",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2865.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2865.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2865.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 8",
+              "caption": "Palccoyo · 08",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2886.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2886.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2886.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 9",
+              "caption": "Palccoyo · 09",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2888.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2888.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2888.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 10",
+              "caption": "Palccoyo · 10",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2940.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2940.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2940.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 11",
+              "caption": "Palccoyo · 11",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2956.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2956.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2956.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 12",
+              "caption": "Palccoyo · 12",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2959.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2959.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2959.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 13",
+              "caption": "Palccoyo · 13",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2960.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2960.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2960.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 14",
+              "caption": "Palccoyo · 14",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2970.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2970.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2970.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 15",
+              "caption": "Palccoyo · 15",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_2995.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_2995.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_2995.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 16",
+              "caption": "Palccoyo · 16",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_3002.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_3002.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_3002.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 17",
+              "caption": "Palccoyo · 17",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_3011.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_3011.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_3011.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 18",
+              "caption": "Palccoyo · 18",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_3033.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_3033.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_3033.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 19",
+              "caption": "Palccoyo · 19",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_3034.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_3034.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_3034.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 20",
+              "caption": "Palccoyo · 20",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_3048.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_3048.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_3048.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 21",
+              "caption": "Palccoyo · 21",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_3050.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_3050.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_3050.jpg"
+            },
+            {
+              "alt": "Palccoyo, Peru — photograph 22",
+              "caption": "Palccoyo · 22",
+              "location": "Peru",
+              "src": "photos/peru/palccoyo/img_3068.webp",
+              "thumbnail": "thumbnails/photos/peru/palccoyo/img_3068.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "9_palccoyo/IMG_3068.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Miscellaneous",
+          "slug": "miscellaneous",
+          "categories": [],
+          "photos": [
+            {
+              "alt": "Miscellaneous, Peru — photograph 1",
+              "caption": "Miscellaneous · 01",
+              "location": "Peru",
+              "src": "photos/peru/miscellaneous/img_2727.webp",
+              "thumbnail": "thumbnails/photos/peru/miscellaneous/img_2727.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/IMG_2727.jpg"
+            },
+            {
+              "alt": "Miscellaneous, Peru — photograph 2",
+              "caption": "Miscellaneous · 02",
+              "location": "Peru",
+              "src": "photos/peru/miscellaneous/img_2772.webp",
+              "thumbnail": "thumbnails/photos/peru/miscellaneous/img_2772.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/IMG_2772.jpg"
+            },
+            {
+              "alt": "Miscellaneous, Peru — photograph 3",
+              "caption": "Miscellaneous · 03",
+              "location": "Peru",
+              "src": "photos/peru/miscellaneous/img_3089.webp",
+              "thumbnail": "thumbnails/photos/peru/miscellaneous/img_3089.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/IMG_3089.jpg"
+            },
+            {
+              "alt": "Miscellaneous, Peru — photograph 4",
+              "caption": "Miscellaneous · 04",
+              "location": "Peru",
+              "src": "photos/peru/miscellaneous/img_3093.webp",
+              "thumbnail": "thumbnails/photos/peru/miscellaneous/img_3093.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/IMG_3093.jpg"
+            },
+            {
+              "alt": "Miscellaneous, Peru — photograph 5",
+              "caption": "Miscellaneous · 05",
+              "location": "Peru",
+              "src": "photos/peru/miscellaneous/img_3100.webp",
+              "thumbnail": "thumbnails/photos/peru/miscellaneous/img_3100.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/IMG_3100.jpg"
+            },
+            {
+              "alt": "Miscellaneous, Peru — photograph 6",
+              "caption": "Miscellaneous · 06",
+              "location": "Peru",
+              "src": "photos/peru/miscellaneous/img_3175.webp",
+              "thumbnail": "thumbnails/photos/peru/miscellaneous/img_3175.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "keeper_not_book/IMG_3175.jpg"
+            }
+          ]
+        }
+      ],
       "photos": []
     }
   ],

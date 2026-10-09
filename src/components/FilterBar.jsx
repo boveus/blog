@@ -8,7 +8,7 @@ function FilterBar({ categories, activeCategory, onCategoryChange, searchQuery, 
         </svg>
         <input
           type="text"
-          placeholder="Search by species, caption, location..."
+          placeholder="Search this collection…"
           value={searchQuery}
           onChange={e => onSearchChange(e.target.value)}
           className="filter-search-input"
