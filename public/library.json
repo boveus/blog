@@ -42,6 +42,19 @@
                   "description": "Winged carpenter ant reproductives congregating on a surface during a nuptial flight event.",
                   "width": 2400,
                   "height": 1600
+                },
+                {
+                  "caption": "Ant Beneath a Twig",
+                  "alt": "A black ant clinging beneath a twig against a soft green background.",
+                  "description": "A black ant clinging beneath a twig against a soft green background.",
+                  "location": "Georgia",
+                  "species": "Formicidae family (Ant; species undetermined)",
+                  "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+                  "src": "photos/macro/bugs/ants/img_8891.webp",
+                  "thumbnail": "thumbnails/photos/macro/bugs/ants/img_8891.webp",
+                  "width": 2400,
+                  "height": 1600,
+                  "originalFile": "untitled-folder/IMG_8891.JPG"
                 }
               ]
             },
@@ -235,6 +248,32 @@
                   "description": "An Asian jumping worm on dry, bare soil, showing its dark, glossy body characteristic of this invasive species.",
                   "width": 2400,
                   "height": 1600
+                },
+                {
+                  "caption": "Worm in Decaying Wood",
+                  "alt": "A smooth, segmented brown worm among fibers of decaying wood.",
+                  "description": "A smooth, segmented brown worm among fibers of decaying wood.",
+                  "location": "Georgia",
+                  "species": "Worm (species undetermined)",
+                  "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+                  "src": "photos/macro/bugs/worms/img_8754.webp",
+                  "thumbnail": "thumbnails/photos/macro/bugs/worms/img_8754.webp",
+                  "width": 2400,
+                  "height": 1600,
+                  "originalFile": "untitled-folder/IMG_8754.JPG"
+                },
+                {
+                  "caption": "Worm — Close View",
+                  "alt": "A slender brown worm extending across the exposed interior of a log.",
+                  "description": "A slender brown worm extending across the exposed interior of a log.",
+                  "location": "Georgia",
+                  "species": "Worm (species undetermined)",
+                  "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+                  "src": "photos/macro/bugs/worms/img_8759.webp",
+                  "thumbnail": "thumbnails/photos/macro/bugs/worms/img_8759.webp",
+                  "width": 2400,
+                  "height": 1600,
+                  "originalFile": "untitled-folder/IMG_8759.JPG"
                 }
               ]
             }
@@ -478,6 +517,195 @@
               "species": "Polistes sp. (Paper Wasp)",
               "description": "Close side view of a paper wasp on flowers, showing its red head, narrow waist, and long folded wings.",
               "identificationNote": "Polistes is the working genus identification. Polistes erythrocephalus is a possible species, but coloration alone does not confirm it."
+            }
+          ]
+        },
+        {
+          "name": "Fungi",
+          "slug": "fungi",
+          "categories": [],
+          "photos": [
+            {
+              "caption": "Layered Mushroom Caps",
+              "alt": "Pale overlapping mushroom caps with delicate fringed edges.",
+              "description": "Pale overlapping mushroom caps with delicate fringed edges.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8745.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8745.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8745.JPG"
+            },
+            {
+              "caption": "Mushroom Gills",
+              "alt": "Close view of pale mushroom gills spreading beneath overlapping caps.",
+              "description": "Close view of pale mushroom gills spreading beneath overlapping caps.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8750.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8750.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8750.JPG"
+            },
+            {
+              "caption": "Gills and Curled Edges",
+              "alt": "A pale mushroom viewed from below, showing branching gills and curled cap edges.",
+              "description": "A pale mushroom viewed from below, showing branching gills and curled cap edges.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8763.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8763.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8763.JPG"
+            },
+            {
+              "caption": "Banded Shelf Fungus",
+              "alt": "A small bracket fungus with concentric bands growing from wood.",
+              "description": "A small bracket fungus with concentric bands growing from wood.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8782.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8782.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8782.JPG"
+            },
+            {
+              "caption": "Shelves of Fungi",
+              "alt": "Overlapping bands of shelf fungi running along decaying wood.",
+              "description": "Overlapping bands of shelf fungi running along decaying wood.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8793.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8793.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "untitled-folder/IMG_8793.JPG"
+            },
+            {
+              "caption": "Pleated Mushroom Cap",
+              "alt": "A delicate pale-yellow mushroom cap with fine radial pleats.",
+              "description": "A delicate pale-yellow mushroom cap with fine radial pleats.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8812.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8812.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8812.JPG"
+            },
+            {
+              "caption": "Pleated Cap — Side View",
+              "alt": "A thin mushroom cap with radiating ridges above a slender stem.",
+              "description": "A thin mushroom cap with radiating ridges above a slender stem.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8815.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8815.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8815.JPG"
+            },
+            {
+              "caption": "Cup-shaped Fungi",
+              "alt": "Two tan cup-shaped fungal growths among wood and moss.",
+              "description": "Two tan cup-shaped fungal growths among wood and moss.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8822.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8822.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8822.JPG"
+            },
+            {
+              "caption": "Fungi on Fallen Wood",
+              "alt": "Pale cup-shaped fungi clustered on a dark piece of wood.",
+              "description": "Pale cup-shaped fungi clustered on a dark piece of wood.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8823.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8823.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8823.JPG"
+            },
+            {
+              "caption": "A Pair of Fungi",
+              "alt": "Two closely spaced tan fungal growths with pale, uneven rims.",
+              "description": "Two closely spaced tan fungal growths with pale, uneven rims.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8826.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8826.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8826.JPG"
+            },
+            {
+              "caption": "Pale Mushroom",
+              "alt": "A pale mushroom cap with a yellowish center and fine surface texture.",
+              "description": "A pale mushroom cap with a yellowish center and fine surface texture.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8845.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8845.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8845.JPG"
+            },
+            {
+              "caption": "Emerging Mushroom",
+              "alt": "A young mushroom with a textured gray-white cap emerging through leaf litter.",
+              "description": "A young mushroom with a textured gray-white cap emerging through leaf litter.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8872.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8872.webp",
+              "width": 1600,
+              "height": 2400,
+              "originalFile": "untitled-folder/IMG_8872.JPG"
+            },
+            {
+              "caption": "Mushroom Cap Texture",
+              "alt": "An extreme close-up of raised scales on a pale mushroom cap.",
+              "description": "An extreme close-up of raised scales on a pale mushroom cap.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8899.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8899.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8899.JPG"
+            },
+            {
+              "caption": "Scaly Mushroom Cap",
+              "alt": "A rounded pale mushroom cap covered in small pointed scales.",
+              "description": "A rounded pale mushroom cap covered in small pointed scales.",
+              "location": "Georgia",
+              "species": "Fungi (species undetermined)",
+              "identificationNote": "Photo-based identification only; the species cannot be confirmed from this view.",
+              "src": "photos/macro/fungi/img_8900.webp",
+              "thumbnail": "thumbnails/photos/macro/fungi/img_8900.webp",
+              "width": 2400,
+              "height": 1600,
+              "originalFile": "untitled-folder/IMG_8900.JPG"
             }
           ]
         }
@@ -2122,6 +2350,35 @@
         }
       ],
       "photos": []
+    },
+    {
+      "name": "Georgia",
+      "slug": "georgia",
+      "categories": [],
+      "photos": [
+        {
+          "caption": "Pond Ripples",
+          "alt": "Waterfowl crossing a pond below reflections of trees.",
+          "description": "Waterfowl crossing a pond below reflections of trees.",
+          "location": "Georgia",
+          "src": "photos/georgia/img_8654.webp",
+          "thumbnail": "thumbnails/photos/georgia/img_8654.webp",
+          "width": 2400,
+          "height": 1600,
+          "originalFile": "untitled-folder/IMG_8654.JPG"
+        },
+        {
+          "caption": "At the Water’s Edge",
+          "alt": "A tree-lined pond with waterfowl and a sunlit grassy bank.",
+          "description": "A tree-lined pond with waterfowl and a sunlit grassy bank.",
+          "location": "Georgia",
+          "src": "photos/georgia/img_8656.webp",
+          "thumbnail": "thumbnails/photos/georgia/img_8656.webp",
+          "width": 2400,
+          "height": 1600,
+          "originalFile": "untitled-folder/IMG_8656.JPG"
+        }
+      ]
     }
   ],
   "photos": []
