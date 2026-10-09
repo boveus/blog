@@ -6,8 +6,8 @@ import useGallery from '../hooks/useGallery.js'
 
 const base = import.meta.env.BASE_URL
 const descriptions = {
-  macro: { eyebrow: 'A closer look', title: 'Small worlds.', text: 'Arthropods, hidden textures, and the extraordinary details right under our feet.', cover: 'photos/macro/bugs/joro-spiders/joro_3.webp' },
-  peru: { eyebrow: 'A journey through Peru', title: 'Farther afield.', text: 'Into the mountains, over high passes, and through the places in between.', cover: 'photos/peru/macchu-picchu/img_7975.webp' },
+  macro: { eyebrow: 'Macro photography', title: 'Macro', text: 'Insects, fungi, plants, and other close-up subjects.', cover: 'photos/macro/bugs/joro-spiders/joro_3.webp' },
+  peru: { eyebrow: 'Travel photography', title: 'Peru', text: 'Photos from my Peru trip, organized by location and part of the route.', cover: 'photos/peru/macchu-picchu/img_7975.webp' },
 }
 
 export default function Library() {
@@ -36,8 +36,8 @@ export default function Library() {
     {!selected ? <>
       <section className="editorial-intro">
         <p className="eyebrow">Brandon Stewart / Photography</p>
-        <h1>A little closer.<br /><em>A little farther.</em></h1>
-        <div className="intro-bottom"><p>From the small worlds at our feet to the mountains of Peru.<br />Photographs from wherever curiosity leads.</p><span className="edition">Two ways of seeing ↙</span></div>
+        <h1>Photography</h1>
+        <div className="intro-bottom"><p>Macro and travel photos by Brandon Stewart.</p></div>
       </section>
       <section className="collection-grid" aria-label="Photography collections">
         {collections.map((c, i) => {
@@ -45,11 +45,11 @@ export default function Library() {
           return <Link className="collection-card" key={c.slug} to={`/?collection=${c.slug}`}>
             <img src={base + (d.cover || c.allPhotos[0].src)} alt={`${c.name} photography collection`} fetchPriority={i === 0 ? 'high' : 'auto'} />
             <div className="collection-top"><span>0{i + 1} / {c.name}</span><span>{c.allPhotos.length} photographs</span></div>
-            <div className="collection-content"><p className="eyebrow">{d.eyebrow}</p><h2>{d.title}</h2><p>{d.text}</p><span className="collection-action">Explore {c.name} <span aria-hidden="true">↗</span></span></div>
+            <div className="collection-content"><p className="eyebrow">{d.eyebrow}</p><h2>{d.title}</h2><p>{d.text}</p><span className="collection-action">View {c.name} <span aria-hidden="true">↗</span></span></div>
           </Link>
         })}
       </section>
-      <section className="about-strip"><div><p className="eyebrow">Behind the camera</p><h2>Hi, I’m Brandon.</h2></div><div><p>Software engineer, product security engineer, and photographer. I’m drawn to the intricate details of the natural world, whether close to home or a long way from it.</p><div className="social-links"><a href="https://github.com/boveus">GitHub ↗</a><a href="https://www.linkedin.com/in/brandon-scott-stewart/">LinkedIn ↗</a><a href="mailto:me@brandonsstewart.com">Email ↗</a></div></div></section>
+      <section className="about-strip"><div><p className="eyebrow">About</p><h2>Brandon Stewart</h2></div><div><p>I’m a software and product security engineer. This site is a collection of my photography.</p><div className="social-links"><a href="https://github.com/boveus">GitHub ↗</a><a href="https://www.linkedin.com/in/brandon-scott-stewart/">LinkedIn ↗</a><a href="mailto:me@brandonsstewart.com">Email ↗</a></div></div></section>
     </> : <>
       <Link className="back-link" to="/">← All collections</Link>
       <section className="collection-heading"><div><p className="eyebrow">{descriptions[collection]?.eyebrow || 'Photography'}</p><h1>{selected.name}<em> /</em></h1></div><p>{descriptions[collection]?.text}<span>{selected.allPhotos.length} photographs · {categories.length - 1} {collection === 'peru' ? 'chapters' : 'subjects'}</span></p></section>
