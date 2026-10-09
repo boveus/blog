@@ -400,3 +400,10 @@ main:focus { outline: none; }
   .photo-grid--balanced { gap: 24px 12px; }
   .photo-grid--balanced .photo-card { flex-basis: calc(var(--photo-ratio) * 130px); }
 }
+
+.collection-card--secondary { grid-column: 1 / -1; min-height: 320px; }
+.collection-card--secondary > img { object-position: center 58%; }
+@media (max-width: 540px) { .collection-card--secondary { min-height: 400px; } }
+.photo-grid--georgia { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.photo-grid--georgia .photo-card { margin-bottom: 0; }
+@media (max-width: 540px) { .photo-grid--georgia { grid-template-columns: 1fr; } }
